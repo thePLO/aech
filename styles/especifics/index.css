@@ -1,0 +1,32 @@
+h1 {
+    font-family: Georgia, serif;
+    border-bottom: 3px solid #407D22;
+    color: #407D22;
+    font-size: 30px;
+}
+h2 {
+    color: #407D22;
+}
+
+ul#submenu {
+    padding: 0;
+    margin-bottom: 11px;
+}
+
+ul#submenu li {
+    display: inline;
+    margin-right: 3px;
+}
+
+ul#submenu li a {
+    background-color: #91c378;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000000;
+    border-radius: 0 0 4px 4px;
+}
+
+ul#submenu li a:hover {
+    color: white;
+    background-color: #407D22;
+}
