@@ -107,13 +107,25 @@ changeCastors = function(i){
 	}else if (i==2){
 		document.getElementById("text").innerHTML =
 		"<h2>Monitors</h2>"+
-		"<ul>"+
-		"  <li>Ana Cerqueira</li>"+
-		"  <li>Arnau Pérez</li>"+
-		"  <li>Dani Balongo</li>"+
-		"  <li>Sónia Camarasa</li>"+
-		"  <li>Víctor Dieste</li>"+
-		"</ul>";
+		"<table style='width:100%' id:'monis'>"+
+		"<tr><td>Ana Cerqueira</td><td>Arnau Pérez</td><td>Dani Balongo</td><td>Sónia Camarasa</td><td>Víctor Dieste</td></tr>"+
+		"<tr><td id='moni0'></td><td id='moni1'></td><td id='moni2'></td><td id='moni3'></td><td id='moni4'></td></tr>"+
+		"<tr><td colspan='5'><i class='fa fa-envelope-o'></i> <a href='mailto:castors@aech.cat'>castors@aech.cat</a></td></tr>"+
+		"</table>";
+		var srcs = ["gfx/monis/ana_cerqueira.jpg",
+					"gfx/monis/arnau_perez.jpg",
+					"gfx/monis/dani_balongo.jpg",
+					"gfx/monis/sonia_camarasa.jpg",
+					"gfx/monis/victor_dieste.jpg"];
+		var imgs=[];
+		var list=[];
+    	for(var j = 0;j<srcs.length;j++){
+			list[j] = document.getElementById('moni'+j);
+			imgs[j] = document.createElement("IMG");
+		   	imgs[j].setAttribute("src", srcs[j]);
+    		imgs[j].setAttribute("height", "170");
+   			list[j].appendChild(imgs[j]);
+   		}
 	}else if (i==3){
 		document.getElementById("text").innerHTML =
 		"<h2>Fotos i Videos</h2>"+
@@ -177,13 +189,25 @@ changeLlops = function(i){
 	}else if (i==2){
 		document.getElementById("text").innerHTML =
 		"<h2>Monitors</h2>"+
-		"<ul>"+
-		"  <li>Mireia Sanromà</li>"+
-		"  <li>Dani Barrientos</li>"+
-		"  <li>Erica Tena</li>"+
-		"  <li>Edgar Soriano</li>"+
-		"  <li>Andrea González</li>"+
-		"</ul>";
+		"<table style='width:100%' id:'monis'>"+
+		"<tr><td>Mireia Sanromà</td><td>Dani Barrientos</td><td>Erica Tena</td><td>Edgar Soriano</td><td>Andrea González</td></tr>"+
+		"<tr><td id='moni0'></td><td id='moni1'></td><td id='moni2'></td><td id='moni3'></td><td id='moni4'></td></tr>"+
+		"<tr><td colspan='5'><i class='fa fa-envelope-o'></i> <a href='mailto:llops@aech.cat'>llops@aech.cat</a></td></tr>"+
+		"</table>";
+		var srcs = ["gfx/monis/mireia_sanroma.jpg",
+					"gfx/monis/dani_barrientos.jpg",
+					"gfx/monis/erica_tena.jpg",
+					"gfx/monis/edgar_soriano.jpg",
+					"gfx/monis/andrea_glez.jpg"];
+		var imgs=[];
+		var list=[];
+    	for(var j = 0;j<srcs.length;j++){
+			list[j] = document.getElementById('moni'+j);
+			imgs[j] = document.createElement("IMG");
+		   	imgs[j].setAttribute("src", srcs[j]);
+    		imgs[j].setAttribute("height", "170");
+   			list[j].appendChild(imgs[j]);
+   		};
 	}else if (i==3){
 		document.getElementById("text").innerHTML =
 		"<h2>Fotos i Videos</h2>"+
@@ -248,6 +272,25 @@ changeRangers = function(i){
 		"</ul>";
 	}else if (i==2){
 		document.getElementById("text").innerHTML =
+		"<h2>Monitors</h2>"+
+		"<table style='width:100%' id:'monis'>"+
+		"<tr><td>Edu González</td><td>Guille Balongo</td><td>Marta García</td><td>Mireia Manuel</td></tr>"+
+		"<tr><td id='moni0'></td><td id='moni1'></td><td id='moni2'></td><td id='moni3'></td></tr>"+
+		"<tr><td colspan='4'><i class='fa fa-envelope-o'></i> <a href='mailto:rangers@aech.cat'>rangers@aech.cat</a></td></tr>"+
+		"</table>";
+		var srcs = ["gfx/monis/edu_glez.jpg",
+					"gfx/monis/guille_balongo.jpg",
+					"gfx/monis/marta_garcia.jpg",
+					"gfx/monis/mireia_manuel.jpg"];
+		var imgs=[];
+		var list=[];
+    	for(var j = 0;j<srcs.length;j++){
+			list[j] = document.getElementById('moni'+j);
+			imgs[j] = document.createElement("IMG");
+		   	imgs[j].setAttribute("src", srcs[j]);
+    		imgs[j].setAttribute("height", "200");
+   			list[j].appendChild(imgs[j]);
+   		};
 		"<h2>Monitors</h2>"+
 		"<ul>"+
 		"  <li>Edu González</li>"+
@@ -327,12 +370,24 @@ changePioners = function(i){
 	}else if (i==2){
 		document.getElementById("text").innerHTML =
 		"<h2>Monitors</h2>"+
-		"<ul>"+
-		"  <li>Pol</li>"+
-		"  <li>Axel</li>"+
-		"  <li>Núria</li>"+
-		"  <li>David</li>"+
-		"</ul>";
+		"<table style='width:100%' id:'monis'>"+
+		"<tr><td>Pol de Miguel</td><td>Axel Cols</td><td>Núria Diago</td><td>David Estefanell</td></tr>"+
+		"<tr><td id='moni0'></td><td id='moni1'></td><td id='moni2'></td><td id='moni3'></td></tr>"+
+		"<tr><td colspan='4'><i class='fa fa-envelope-o'></i> <a href='mailto:pioners@aech.cat'>pioners@aech.cat</a></td></tr>"+
+		"</table>";
+		var srcs = ["gfx/monis/pol_demiguel.jpg",
+					"gfx/monis/axel_cols.jpg",
+					"gfx/monis/nuria_diago.jpg",
+					"gfx/monis/david_estefanell.jpg"];
+		var imgs=[];
+		var list=[];
+    	for(var j = 0;j<srcs.length;j++){
+			list[j] = document.getElementById('moni'+j);
+			imgs[j] = document.createElement("IMG");
+		   	imgs[j].setAttribute("src", srcs[j]);
+    		imgs[j].setAttribute("height", "200");
+   			list[j].appendChild(imgs[j]);
+   		};
 	}else if (i==3){
 		document.getElementById("text").innerHTML =
 		"<h2>Fotos i Videos</h2>"+
@@ -349,7 +404,7 @@ if(document.getElementById("navR2")){
 	"<li><a href='5_rovers.html'>Qui som?</a></li>" +
 	"<li><a href='#' onClick='changeRovers(0)'>Calendari</a></li>" +
 	"<li><a href='#' onClick='changeRovers(1)'>Objectius</a></li>" +
-	"<li><a href='#' onClick='changeRovers(2)'>Monitors</a></li>" +
+	"<li><a href='#' onClick='changeRovers(2)'>Consellers</a></li>" +
 	"<li><a href='#' onClick='changeRovers(3)'>Fotos i Video</a></li>" +
 	"</ul>";
 }
@@ -393,13 +448,25 @@ changeRovers = function(i){
 		"<h3>Fe</h3>"+
 		"<ul>"+
 		"  <li>Participar activament de la pessebrada.</li>"+
-		"</ul>";AA
+		"</ul>";
 	}else if (i==2){
 		document.getElementById("text").innerHTML =
-		"<h2>Monitors</h2>"+
-		"<ul>"+
-		"  <li>Carlos Domínguez</li>"+
-		"</ul>";
+		"<h2>Conseller</h2>"+
+		"<table style='width:100%' id:'monis'>"+
+		"<tr><td>Carlos Domínguez</td></tr>"+
+		"<tr><td id='moni0'></td></tr>"+
+		"<tr><td colspan='1'><i class='fa fa-envelope-o'></i> <a href='mailto:rovers@aech.cat'>rovers@aech.cat</a></td></tr>"+
+		"</table>";
+		var srcs = ["gfx/monis/carlos_dominguez.jpg"];
+		var imgs=[];
+		var list=[];
+    	for(var j = 0;j<srcs.length;j++){
+			list[j] = document.getElementById('moni'+j);
+			imgs[j] = document.createElement("IMG");
+		   	imgs[j].setAttribute("src", srcs[j]);
+    		imgs[j].setAttribute("height", "200");
+   			list[j].appendChild(imgs[j]);
+   		};
 	}else if (i==3){
 		document.getElementById("text").innerHTML =
 		"<h2>Fotos i Videos</h2>"+
@@ -464,15 +531,21 @@ changeKraal = function(i){
 		"e-mail: <a href='mailto:info@brownsea.net'>info@brownsea.net</a><br>"+
 		"Web: <a href='http://www.brownsea.net'>www.brownsea.net</a>"+
 		"<ul>"+
-		"<li><a href='http://www.maristes.cat/imma/'>Maristes La Immaculada'</a></li>"+
+		"<li><a href='http://www.maristes.cat/imma/'>Maristes La Immaculada</a></li>"+
 		"<li><a href='http://immaculada.fajmacor.org/inici'>Ass. Ajmacor Immaculada</a></li>"+
 		"</ul>";
 	}else if (i==3){
 		document.getElementById("text").innerHTML =
 		"<h2>S.A.P.</h2>"+
 		"<ul>"+
-		"  <li>Picasa</li>"+
-		"  <li>Youtube</li>"+
+		"  <li><a href='http://aech.cat/kraal/06_2015.pdf'>Juny 2015</a></li>"+
+		"  <li><a href='http://aech.cat/kraal/03_2015.pdf'>Març 2015</a></li>"+
+		"  <li><a href='http://aech.cat/kraal/12_2014.pdf'>Desembre 2014</a></li>"+
+		"  <li><a href='http://aech.cat/kraal/09_2014.pdf'>Setembre 2014</a></li>"+
+		"  <li><a href='http://aech.cat/kraal/04_2014.pdf'>Abril 2014</a></li>"+
+		"  <li><a href='http://aech.cat/kraal/12_2013.pdf'>Desembre 2013</a></li>"+
+		"  <li><a href='http://aech.cat/kraal/09_2013.pdf'>Setembre 2013</a></li>"+
+		"  <li><a href='http://aech.cat/kraal/06_2013.pdf'>Juny 2013</a></li>"+
 		"</ul>";
 	}
 };

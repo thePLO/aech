@@ -35,3 +35,7 @@ ul#submenu li a:hover {
     color: white;
     background-color: #be80ff;
 }
+
+table#monis {
+    text-align: center;
+}
