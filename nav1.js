@@ -27,6 +27,9 @@ if(document.getElementById("navC2")){
 	"<ul id='submenu'>" +
 	"<li><a href='1_castors.html'>Qui som?</a></li>" +
 	"<li><a href='#' onClick='change2Calendari(1)'>Calendari</a></li>" +
+	"<li><a href='1_castors.html'>Objectius</a></li>" +
+	"<li><a href='1_castors.html'>Monitors</a></li>" +
+	"<li><a href='1_castors.html'>Fotos i Video</a></li>" +
 	"</ul>";
 }
 //index
@@ -35,6 +38,9 @@ if(document.getElementById("navL2")){
 	"<ul id='submenu'>" +
 	"<li><a href='2_llops.html'>Qui som?</a></li>" +
 	"<li><a href='#' onClick='change2Calendari(2)'>Calendari</a></li>" +
+	"<li><a href='2_llops.html'>Objectius</a></li>" +
+	"<li><a href='2_llops.html'>Monitors</a></li>" +
+	"<li><a href='2_llops.html'>Fotos i Video</a></li>" +
 	"</ul>";
 }
 //index
@@ -43,6 +49,9 @@ if(document.getElementById("navr2")){
 	"<ul id='submenu'>" +
 	"<li><a href='3_rangers.html'>Qui som?</a></li>" +
 	"<li><a href='#' onClick='change2Calendari(3)'>Calendari</a></li>" +
+	"<li><a href='3_rangers.html'>Objectius</a></li>" +
+	"<li><a href='3_rangers.html'>Monitors</a></li>" +
+	"<li><a href='3_rangers.html'>Fotos i Video</a></li>" +
 	"</ul>";
 }
 if(document.getElementById("navP2")){
@@ -50,6 +59,9 @@ if(document.getElementById("navP2")){
 	"<ul id='submenu'>" +
 	"<li><a href='4_pioners.html'>Qui som?</a></li>" +
 	"<li><a href='#' onClick='change2Calendari(4)'>Calendari</a></li>" +
+	"<li><a href='4_pioners.html'>Objectius</a></li>" +
+	"<li><a href='4_pioners.html'>Monitors</a></li>" +
+	"<li><a href='4_pioners.html'>Fotos i Video</a></li>" +
 	"</ul>";
 }
 //index
@@ -58,6 +70,9 @@ if(document.getElementById("navR2")){
 	"<ul id='submenu'>" +
 	"<li><a href='5_rovers.html'>Qui som?</a></li>" +
 	"<li><a href='#' onClick='change2Calendari(5)'>Calendari</a></li>" +
+	"<li><a href='5_rovers.html'>Objectius</a></li>" +
+	"<li><a href='5_rovers.html'>Monitors</a></li>" +
+	"<li><a href='5_rovers.html'>Fotos i Video</a></li>" +
 	"</ul>";
 }
 //index
