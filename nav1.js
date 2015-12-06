@@ -378,20 +378,27 @@ changeRovers = function(i){
 	}else if (i==1){
 		document.getElementById("text").innerHTML =
 		"<h2>Objectius</h2>"+
-		"<p>Si et vols inscriure a l\'Agrupament l\'únic que has de fer es portar-nos emplenada, la inscripció (Botó de la dreta Inscripció General).</p>"+
-		"<p>Per portar-ho ho pots fer entre setmana de 17.30 a 18.15 fins a l'octubre i després dissabtes de 10h a 13h. O en cas de que et fos molt complicat ho pots deixar a la recepció a l'atenció de l'Agrupament.</p>"+
-		"<p>Castors - 3r i 4t de Primària.<br>"+
-		"Llops - 5è i 6è de Primària.<br>"+
-		"Ràngers - 1r i 2n d\'ESO.<br>"+
-		"Pioners - 3r i 4t d\'ESO i 1r de Batxillerat.<br>"+
-		"Róvers - a partir de 2n de Batxillerat.</p>"+
-		"<p>Per qualsevol dubte o aclaració no dubtis en escriu-re\'ns: <a href='mailto:info@aech.cat'>info@aech.cat</a></p>";
+		"<h3>Escoltisme</h3>"+
+		"<ul>"+
+		"  <li>Participar activament i visualment dins de l\'agrupament.</li>"+
+		"  <li>Realitzar un servei vers la societat.</li>"+
+		"  <li>Reduïr les activitats en xarxa durant les activitats.</li>"+
+		"  <li>Tirar endavant les nostres proposicions.</li>"+
+		"</ul>"+
+		"<h3>Natura</h3>"+
+		"<ul>"+
+		"  <li>Millorar l\'estat d\'alguna de les grans rutes catalanes.</li>"+
+		"  <li>Millorar el nostre coneixement sobre estris de montanya.</li>"+
+		"</ul>"+
+		"<h3>Fe</h3>"+
+		"<ul>"+
+		"  <li>Participar activament de la pessebrada.</li>"+
+		"</ul>";AA
 	}else if (i==2){
 		document.getElementById("text").innerHTML =
 		"<h2>Monitors</h2>"+
 		"<ul>"+
-		"  <li>RSS</li>"+
-		"  <li>Formulari</li>"+
+		"  <li>Carlos Domínguez</li>"+
 		"</ul>";
 	}else if (i==3){
 		document.getElementById("text").innerHTML =
@@ -418,23 +425,14 @@ changeKraal = function(i){
 		document.getElementById("text").innerHTML =
 		"<h2>Dades Bancàries</h2>"+
 		"<table style='width:100%'>"+
-		"  <tr><th colspan='2'>OCTUBRE</th><th colspan='2'>NOVEMBRE</th><th colspan='2'>DESEMBRE</th></tr>"+
-		"  <tr><td>3-4</td><td>Activitat de matí</td>"+
-		"	   <td>7-8</td><td>Activitat de matí</td>"+
-		"      <td>5-6</td><td>Lliure</td></tr>"+
-		"  <tr><td>10-11</td><td>Lliure</td>"+
-		"	   <td>14-15</td><td><i class='fa fa-file-pdf-o'></i> Excursió d\' un dia</td>"+
-		"      <td>12-13</td><td>Activitat de matí</td></tr>"+
-		"  <tr><td>17-18</td><td>Activitat de matí</td>"+
-		"	   <td>21-22</td><td>Activitat de matí</td>"+
-		"      <td>19-20</td><td><i class='fa fa-calendar-check-o'></i> Pessebrada</td></tr>"+
-		"  <tr><td>24-25</td><td>Activitat de tarda (div)</td>"+
-		"	   <td>28-29</td><td>Excursió de dos dies</td>"+
-		"      <td></td><td></td></tr>"+
-		"  <tr><td>31-1</td><td>Lliure</td>"+
-		"	   <td></td><td></td>"+
-		"      <td>27-30</td><td><i class='fa fa-file-pdf-o'></i> Excursió de Nadal</td></tr>"+
-		"</table>";
+		"  <tr><td>CASTORS - LLÚDRIGUES</td><td>ES57 2100 0810 2702 0086 1703</td>"+
+		"  <tr><td>LLOPS - DAINES</td><td>ES94 2100 0810 2102 0086 1816</td>"+
+		"  <tr><td>RÀNGERS - GUIES</td><td>ES31 2100 0810 2602 0086 1929</td>"+
+		"  <tr><td>PIONERS - CARAVEL·LES</td><td>ES85 2100 0810 2802 0086 2023</td>"+
+		"  <tr><td>RÓVERS</td><td>ES25 2100 0810 2202 0086 2136</td>"+
+		"  <tr><td>GENERAL</td><td>ES47 2100 0810 2502 0086 1690</td>"+
+		"<img src='gfx/lacaixa.jpg'";
+
 	}else if (i==1){
 		document.getElementById("text").innerHTML =
 		"<h2>Càrrecs</h2>"+
