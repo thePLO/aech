@@ -10,7 +10,17 @@ h1 {
 h2 {
     color: #407D22;
 }
-
+ul#menu li a:not(.active) {
+    background-color: #91c378;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #696969;
+    border-radius: 4px 4px 0 0;
+}
+ul#menu li a:hover:not(.active) {
+    color: white;
+    background-color: #999999;
+}
 ul#submenu {
     padding: 0;
     margin-bottom: 11px;

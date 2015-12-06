@@ -31,6 +31,17 @@ th#mesos{
 td#dia{
     background-color: #cbe5fd;
 }
+ul#menu li a:not(.active) {
+    background-color: #a6d4ff;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #696969;
+    border-radius: 4px 4px 0 0;
+}
+ul#menu li a:hover:not(.active) {
+    color: white;
+    background-color: #999999;
+}
 ul#submenu li {
     display: inline;
     margin-right: 3px;

@@ -1,14 +1,18 @@
 document.getElementById("nav01").innerHTML =
 "<ul id='menu'>" +
-"<li><a href='index.html'>Agrupament</a></li>" +
-"<li><a href='1_castors.html'>C/LL</a></li>" +
-"<li><a href='2_llops.html'>LL/D</a></li>" +
-"<li><a href='3_rangers.html'>R/G</a></li>" +
-"<li><a href='4_pioners.html'>P/C</a></li>" +
-"<li><a href='5_rovers.html'>R</a></li>" +
-"<li><a href='6_kraal.html'>Kraal</a></li>" +
+"<li><a id='m_in' href='index.html'>AECH</a></li>" +
+"<li><a id='m_ca' href='1_castors.html'>C/LL</a></li>" +
+"<li><a id='m_ll' href='2_llops.html'>LL/D</a></li>" +
+"<li><a id='m_ra' href='3_rangers.html'>R/G</a></li>" +
+"<li><a id='m_pi' href='4_pioners.html'>P/C</a></li>" +
+"<li><a id='m_ro' href='5_rovers.html'>R</a></li>" +
+"<li><a id='m_kr' href='6_kraal.html'>Kraal</a></li>" +
 "</ul>";
-
+/*var logo = document.createElement("IMG");
+logo.setAttribute("src", "gfx/logo.png");
+logo.setAttribute("height", "30");
+logo.setAttribute("id", "m_in");
+document.getElementById('m_in').appendChild(logo);*/
 //submenus
 //index
 if(document.getElementById("navI2")){
@@ -27,14 +31,23 @@ changeIndex = function(i){
 	}else if (i==1){
 		document.getElementById("text").innerHTML =
 		"<h2>Inscripcions</h2>"+
-		"<p>Si et vols inscriure a l\'Agrupament l\'únic que has de fer es portar-nos emplenada, la inscripció (Botó de la dreta Inscripció General).</p>"+
-		"<p>Per portar-ho ho pots fer entre setmana de 17.30 a 18.15 fins a l'octubre i després dissabtes de 10h a 13h. O en cas de que et fos molt complicat ho pots deixar a la recepció a l'atenció de l'Agrupament.</p>"+
-		"<p>Castors - 3r i 4t de Primària.<br>"+
-		"Llops - 5è i 6è de Primària.<br>"+
-		"Ràngers - 1r i 2n d\'ESO.<br>"+
-		"Pioners - 3r i 4t d\'ESO i 1r de Batxillerat.<br>"+
-		"Róvers - a partir de 2n de Batxillerat.</p>"+
-		"<p>Per qualsevol dubte o aclaració no dubtis en escriu-re\'ns: <a href='mailto:info@aech.cat'>info@aech.cat</a></p>";
+		"<table style='width:100%'>"+
+		"	<tr>"+
+		"		<td>"+
+					"<p>Si et vols inscriure a l\'Agrupament l\'únic que has de fer es portar-nos emplenada, la inscripció (Botó de la dreta Inscripció General).</p>"+
+					"<p>Per portar-ho ho pots fer entre setmana de 17.30 a 18.15 fins a l'octubre i després dissabtes de 10h a 13h. O en cas de que et fos molt complicat ho pots deixar a la recepció a l'atenció de l'Agrupament.</p>"+
+					"<p>Castors - 3r i 4t de Primària.<br>"+
+					"Llops - 5è i 6è de Primària.<br>"+
+					"Ràngers - 1r i 2n d\'ESO.<br>"+
+					"Pioners - 3r i 4t d\'ESO i 1r de Batxillerat.<br>"+
+					"Róvers - a partir de 2n de Batxillerat.</p>"+
+					"<p>Per qualsevol dubte o aclaració no dubtis en escriu-re\'ns: <a href='mailto:info@aech.cat'>info@aech.cat</a></p>"+
+		"		</td>"+
+		"		<td style='width:150px'>"+
+		"			QWERQWQWERQWERQWERQWERQWERER"+
+		"		</td>"+
+		"	</tr>"+
+		"</table>";
 	}else if (i==2){
 		document.getElementById("text").innerHTML =
 		"<h2>Comissió de pares</h2>"+

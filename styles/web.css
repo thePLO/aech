@@ -19,7 +19,6 @@ body {
     background-color: #ffffff;
     border-radius: 0 0 15px 15px;
 }
-
 ul#menu {
     padding: 0;
     margin-bottom: 10px;
@@ -31,7 +30,7 @@ ul#menu li {
     margin-right: 3px;
 }
 
-ul#menu li a {
+ul#menu li a.active {
     background-color: #ffffff;
     padding: 10px 20px;
     text-decoration: none;
@@ -39,7 +38,13 @@ ul#menu li a {
     border-radius: 4px 4px 0 0;
 }
 
-ul#menu li a:hover {
-    color: white;
-    background-color: #999999;
+
+footer{
+    width: 770px;
+    position: relative;
+    margin: 0 auto 0 auto;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 13px;
+    color: #696969;
 }
