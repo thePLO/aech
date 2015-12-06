@@ -23,6 +23,13 @@ td, th{
 }
 td#activitat{
     text-align: left;
+    padding-left: 10px;
+}
+th#mesos{
+    background-color: #cec59c;
+}
+td#dia{
+    background-color: #d0c9aa;
 }
 ul#submenu li {
     display: inline;

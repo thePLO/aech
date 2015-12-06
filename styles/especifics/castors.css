@@ -20,6 +20,13 @@ td, th{
 }
 td#activitat{
     text-align: left;
+    padding-left: 10px;
+}
+th#mesos{
+    background-color: #e0c2ff;
+}
+td#dia{
+    background-color: #f2e6ff;
 }
 ul#submenu {
     padding: 0;
