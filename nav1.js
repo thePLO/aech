@@ -292,7 +292,7 @@ changePioners = function(i){
 		"      <td>19-20</td><td><i class='fa fa-calendar-check-o'></i> Pessebrada</td></tr>"+
 		"  <tr><td>24-25</td><td>Activitat de matí</td>"+
 		"	   <td>28-29</td><td>Activitat de matí</td>"+
-		"      <td></td><td></td>Activitat de matí</tr>"+
+		"      <td></td><td></td></tr>"+
 		"  <tr><td>31-1</td><td>Lliure</td>"+
 		"	   <td></td><td></td>"+
 		"      <td>27-30</td><td><i class='fa fa-file-pdf-o'></i> <i class='fa fa-info-circle'></i> Ruta de Nadal</td></tr>"+
