@@ -280,7 +280,7 @@ changeRangers = function(i){
 		"</table>";
 		var srcs = ["gfx/monis/edu_glez.jpg",
 					"gfx/monis/guille_balongo.jpg",
-					"gfx/monis/marta_garcia.jpg",
+					"gfx/monis/marta_g.jpg",
 					"gfx/monis/mireia_manuel.jpg"];
 		var imgs=[];
 		var list=[];
@@ -509,10 +509,29 @@ changeKraal = function(i){
 		document.getElementById("text").innerHTML =
 		"<h2>Càrrecs</h2>"+
 		"<table style='width:100%'>"+
-		"  <tr><td>Edu-Montse-Guille</td><td>Dani Balongo</td><td>Mireia Sanromà</td><td>Enric Martín</td><td>David Estefanell</td><td>Sónia Camarasa</td>"+
+		"  <tr><td>Edu-Montse-Guille</td><td>Dani Balongo</td><td>Mireia Sanromà</td><td>Enric Martín</td><td>David Estefanell</td><td>Sónia Camarasa</td></tr>"+
+		"  <tr><td id='fotocaps'></td><td id='fotoadmin1'></td><td id='fotoadmin2'></td><td id='fotoadmin3'></td><td id='fotosecre1'></td><td id='fotosecre2'></td></tr>"+
 		"  <tr><td><a href='mailto:info@aech.cat'>info@aech.cat</a></td><td colspan='3'><a href='mailto:administracio@aech.cat'>administracio@aech.cat</a></td><td colspan='2'><a href='mailto:secretaria@aech.cat'>secretaria@aech.cat</a></td></tr>"+
 		"  <tr><th>Caps</th><th colspan='3'>Administradors</th><th colspan='2'>Secretaris</th></tr>"+
 		"</table>";
+		var srcs = ["gfx/monis/caps.jpg",
+					"gfx/monis/dani_balongo.jpg",
+					"gfx/monis/mireia_sanroma.jpg",
+					"gfx/monis/enric_martin.jpg",
+					"gfx/monis/david_estefanell.jpg",
+					"gfx/monis/sonia_camarasa.jpg"];
+		var im1 = document.createElement("IMG");im1.setAttribute("src", srcs[0]);im1.setAttribute("height", "150");
+		var im2 = document.createElement("IMG");im2.setAttribute("src", srcs[1]);im2.setAttribute("height", "150");
+		var im3 = document.createElement("IMG");im3.setAttribute("src", srcs[2]);im3.setAttribute("height", "150");
+		var im4 = document.createElement("IMG");im4.setAttribute("src", srcs[3]);im4.setAttribute("height", "150");
+		var im5 = document.createElement("IMG");im5.setAttribute("src", srcs[4]);im5.setAttribute("height", "150");
+		var im6 = document.createElement("IMG");im6.setAttribute("src", srcs[5]);im6.setAttribute("height", "150");
+		document.getElementById("fotocaps").appendChild(im1);
+		document.getElementById("fotoadmin1").appendChild(im2);
+		document.getElementById("fotoadmin2").appendChild(im3);
+		document.getElementById("fotoadmin3").appendChild(im4);
+		document.getElementById("fotosecre1").appendChild(im5);
+		document.getElementById("fotosecre2").appendChild(im6);
 	}else if (i==2){
 		document.getElementById("text").innerHTML =
 		"<h2>Enllaços</h2>"+
