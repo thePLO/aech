@@ -248,7 +248,7 @@ changeRangers = function(i){
 		"</ul>";
 	}else if (i==2){
 		document.getElementById("text").innerHTML =
-		"<h2>Monitors</h2>"
+		"<h2>Monitors</h2>"+
 		"<ul>"+
 		"  <li>Edu González</li>"+
 		"  <li>Marta García</li>"+
@@ -436,20 +436,36 @@ changeKraal = function(i){
 	}else if (i==1){
 		document.getElementById("text").innerHTML =
 		"<h2>Càrrecs</h2>"+
-		"<p>Si et vols inscriure a l\'Agrupament l\'únic que has de fer es portar-nos emplenada, la inscripció (Botó de la dreta Inscripció General).</p>"+
-		"<p>Per portar-ho ho pots fer entre setmana de 17.30 a 18.15 fins a l'octubre i després dissabtes de 10h a 13h. O en cas de que et fos molt complicat ho pots deixar a la recepció a l'atenció de l'Agrupament.</p>"+
-		"<p>Castors - 3r i 4t de Primària.<br>"+
-		"Llops - 5è i 6è de Primària.<br>"+
-		"Ràngers - 1r i 2n d\'ESO.<br>"+
-		"Pioners - 3r i 4t d\'ESO i 1r de Batxillerat.<br>"+
-		"Róvers - a partir de 2n de Batxillerat.</p>"+
-		"<p>Per qualsevol dubte o aclaració no dubtis en escriu-re\'ns: <a href='mailto:info@aech.cat'>info@aech.cat</a></p>";
+		"<table style='width:100%'>"+
+		"  <tr><td>Edu-Montse-Guille</td><td>Dani Balongo</td><td>Mireia Sanromà</td><td>Enric Martín</td><td>David Estefanell</td><td>Sónia Camarasa</td>"+
+		"  <tr><td><a href='mailto:info@aech.cat'>info@aech.cat</a></td><td colspan='3'><a href='mailto:administracio@aech.cat'>administracio@aech.cat</a></td><td colspan='2'><a href='mailto:secretaria@aech.cat'>secretaria@aech.cat</a></td></tr>"+
+		"  <tr><th>Caps</th><th colspan='3'>Administradors</th><th colspan='2'>Secretaris</th></tr>"+
+		"</table>";
 	}else if (i==2){
 		document.getElementById("text").innerHTML =
 		"<h2>Enllaços</h2>"+
 		"<ul>"+
-		"  <li>RSS</li>"+
-		"  <li>Formulari</li>"+
+		"<li><a href='http://www.aegarbi.org/'>A.E. Garbí (Lleida)</a></li>"+
+		"<li><a href='http://www.rubidigital.cat/entitats/aealbada/index.html'>A.E. Albada (Rubí)</a></li>"+
+		"<li><a href='http://cauarrels.com/'>A.E. Arrels (Girona)</a></li>"+
+		"<li><a href='http://www.aetorxa.com/'>A.E. Torxa (Igualada)</a></li>"+
+		"<li><a href='http://www.aemontserrat.com/'>A.E. Montserrat (Barcelona - Sants)</a></li>"+
+		"<li><a href='http://www.gech.cat/'>G.E. Champagnat (Badalona)</a></li>"+
+		"<li><a href='http://www.aelasoca.cat/'>A.E. La Soca (Mataró)</a></li>"+
+		"</ul>"+
+		"<ul>"+
+		"<li><a href='http://www.maristes.cat/cms/Inici.html'>C.M.S</a></li>"+
+		"<li><a href='http://www.maristes.cat/cms/Projecte_Educatiu_files/Projecte%20educatiu.pdf'>Projecte Educatiu</a></li>"+
+		"</ul>"+
+		"Brownsea<br>"+
+		"Material esportiu, fulards, camises<br>"+
+		"Adreça: C/ Calàbria 88 (Nova adreça)<br>"+
+		"08015 Barcelona<br>Tel: 93.424.25.66<br>"+
+		"e-mail: <a href='mailto:info@brownsea.net'>info@brownsea.net</a><br>"+
+		"Web: <a href='http://www.brownsea.net'>www.brownsea.net</a>"+
+		"<ul>"+
+		"<li><a href='http://www.maristes.cat/imma/'>Maristes La Immaculada'</a></li>"+
+		"<li><a href='http://immaculada.fajmacor.org/inici'>Ass. Ajmacor Immaculada</a></li>"+
 		"</ul>";
 	}else if (i==3){
 		document.getElementById("text").innerHTML =
