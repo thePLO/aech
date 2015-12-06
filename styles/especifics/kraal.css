@@ -13,7 +13,11 @@ h2 {
 }
 table {
     border-collapse: collapse;
-}table#monis {
+}
+td,th{
+    text-align: center;
+}
+table#monis {
    text-align: center;
 }td#monis_castors{
    background-color: #f2e6ff;

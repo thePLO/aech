@@ -69,21 +69,21 @@ changeCastors = function(i){
 		"<h2>Calendari</h2>"+
 		"<table style='width:100%'>"+
 		"  <tr><th colspan='2'>OCTUBRE</th><th colspan='2'>NOVEMBRE</th><th colspan='2'>DESEMBRE</th></tr>"+
-		"  <tr><td>3-4</td><td>Activitat de matí</td>"+
-		"	   <td>7-8</td><td>Activitat de matí</td>"+
-		"      <td>5-6</td><td>Lliure</td></tr>"+
-		"  <tr><td>10-11</td><td>Lliure</td>"+
-		"	   <td>14-15</td><td>Activitat de matí</td>"+
-		"      <td>12-13</td><td>Activitat de matí</td></tr>"+
-		"  <tr><td>17-18</td><td>Activitat de matí</td>"+
-		"	   <td>21-22</td><td>Activitat de matí</td>"+
-		"      <td>19-20</td><td><i class='fa fa-calendar-check-o'></i> Pessebrada</td></tr>"+
-		"  <tr><td>24-25</td><td><i class='fa fa-file-pdf-o'></i> Excursió d\' un dia</td>"+
-		"	   <td>28-29</td><td><i class='fa fa-file-pdf-o'></i> Excursió de dos dies</td>"+
-		"      <td></td><td></td></tr>"+
-		"  <tr><td>31-1</td><td>Lliure</td>"+
-		"	   <td></td><td></td>"+
-		"      <td>27-30</td><td><i class='fa fa-file-pdf-o'></i> Excursió de Nadal</td></tr>"+
+		"  <tr><td>3-4</td><td id='activitat'>Activitat de matí</td>"+
+		"	   <td>7-8</td><td id='activitat'>Activitat de matí</td>"+
+		"      <td>5-6</td><td id='activitat'>Lliure</td></tr>"+
+		"  <tr><td>10-11</td><td id='activitat'>Lliure</td>"+
+		"	   <td>14-15</td><td id='activitat'>Activitat de matí</td>"+
+		"      <td>12-13</td><td id='activitat'>Activitat de matí</td></tr>"+
+		"  <tr><td>17-18</td><td id='activitat'>Activitat de matí</td>"+
+		"	   <td>21-22</td><td id='activitat'>Activitat de matí</td>"+
+		"      <td>19-20</td><td id='activitat'><i class='fa fa-calendar-check-o'></i> Pessebrada</td></tr>"+
+		"  <tr><td>24-25</td><td id='activitat'><i class='fa fa-file-pdf-o'></i> Excursió d\' un dia</td>"+
+		"	   <td>28-29</td><td id='activitat'><i class='fa fa-file-pdf-o'></i> Excursió de dos dies</td>"+
+		"      <td></td><td id='activitat'></td></tr>"+
+		"  <tr><td>31-1</td><td id='activitat'>Lliure</td>"+
+		"	   <td></td><td id='activitat'></td>"+
+		"      <td>27-30</td><td id='activitat'><i class='fa fa-file-pdf-o'></i> Excursió de Nadal</td></tr>"+
 		"</table>";
 	}else if (i==1){
 		document.getElementById("text").innerHTML =
@@ -152,21 +152,21 @@ changeLlops = function(i){
 		"<h2>Calendari</h2>"+
 		"<table style='width:100%'>"+
 		"  <tr><th colspan='2'>OCTUBRE</th><th colspan='2'>NOVEMBRE</th><th colspan='2'>DESEMBRE</th></tr>"+
-		"  <tr><td>3-4</td><td>Activitat de matí</td>"+
-		"	   <td>7-8</td><td>Activitat de matí</td>"+
-		"      <td>5-6</td><td>Lliure</td></tr>"+
-		"  <tr><td>10-11</td><td>Lliure</td>"+
-		"	   <td>14-15</td><td>Activitat de matí</td>"+
-		"      <td>12-13</td><td>Activitat de matí</td></tr>"+
-		"  <tr><td>17-18</td><td>Activitat de matí</td>"+
-		"	   <td>21-22</td><td><i class='fa fa-file-pdf-o'></i> Excursió de dos dies</td>"+
-		"      <td>19-20</td><td><i class='fa fa-calendar-check-o'></i> Pessebrada</td></tr>"+
-		"  <tr><td>24-25</td><td><i class='fa fa-file-pdf-o'></i> Excursió d\' un dia</td>"+
-		"	   <td>28-29</td><td>Activitat de matí</td>"+
-		"      <td></td><td></td></tr>"+
-		"  <tr><td>31-1</td><td>Lliure</td>"+
-		"	   <td></td><td></td>"+
-		"      <td>27-30</td><td><i class='fa fa-file-pdf-o'></i> Excursió de Nadal</td></tr>"+
+		"  <tr><td>3-4</td><td id='activitat'>Activitat de matí</td>"+
+		"	   <td>7-8</td><td id='activitat'>Activitat de matí</td>"+
+		"      <td>5-6</td><td id='activitat'>Lliure</td></tr>"+
+		"  <tr><td>10-11</td><td id='activitat'>Lliure</td>"+
+		"	   <td>14-15</td><td id='activitat'>Activitat de matí</td>"+
+		"      <td>12-13</td><td id='activitat'>Activitat de matí</td></tr>"+
+		"  <tr><td>17-18</td><td id='activitat'>Activitat de matí</td>"+
+		"	   <td>21-22</td><td id='activitat'><i class='fa fa-file-pdf-o'></i> Excursió de dos dies</td>"+
+		"      <td>19-20</td><td id='activitat'><i class='fa fa-calendar-check-o'></i> Pessebrada</td></tr>"+
+		"  <tr><td>24-25</td><td id='activitat'><i class='fa fa-file-pdf-o'></i> Excursió d\' un dia</td>"+
+		"	   <td>28-29</td><td id='activitat'>Activitat de matí</td>"+
+		"      <td></td><td id='activitat'></td></tr>"+
+		"  <tr><td>31-1</td><td id='activitat'>Lliure</td>"+
+		"	   <td></td><td id='activitat'></td>"+
+		"      <td>27-30</td><td id='activitat'><i class='fa fa-file-pdf-o'></i> Excursió de Nadal</td></tr>"+
 		"</table>";
 	}else if (i==1){
 		document.getElementById("text").innerHTML =
@@ -234,21 +234,21 @@ changeRangers = function(i){
 		"<h2>Calendari</h2>"+
 		"<table style='width:100%'>"+
 		"  <tr><th colspan='2'>OCTUBRE</th><th colspan='2'>NOVEMBRE</th><th colspan='2'>DESEMBRE</th></tr>"+
-		"  <tr><td>3-4</td><td>Activitat de matí</td>"+
-		"	   <td>7-8</td><td>Activitat de matí</td>"+
-		"      <td>5-6</td><td>Lliure</td></tr>"+
-		"  <tr><td>10-11</td><td>Lliure</td>"+
-		"	   <td>14-15</td><td>Activitat de matí</td>"+
-		"      <td>12-13</td><td>Activitat de matí</td></tr>"+
-		"  <tr><td>17-18</td><td>Activitat de matí</td>"+
-		"	   <td>21-22</td><td>Activitat de matí</td>"+
-		"      <td>19-20</td><td><i class='fa fa-calendar-check-o'></i> Pessebrada</td></tr>"+
-		"  <tr><td>24-25</td><td><i class='fa fa-file-pdf-o'></i> Excursió d\' un dia</td>"+
-		"	   <td>28-29</td><td><i class='fa fa-file-pdf-o'></i> Excursió de dos dies</td>"+
-		"      <td></td><td></td></tr>"+
-		"  <tr><td>31-1</td><td>Lliure</td>"+
-		"	   <td></td><td></td>"+
-		"      <td>27-30</td><td><i class='fa fa-file-pdf-o'></i> Excursió de Nadal</td></tr>"+
+		"  <tr><td>3-4</td><td id='activitat'>Activitat de matí</td>"+
+		"	   <td>7-8</td><td id='activitat'>Activitat de matí</td>"+
+		"      <td>5-6</td><td id='activitat'>Lliure</td></tr>"+
+		"  <tr><td>10-11</td><td id='activitat'>Lliure</td>"+
+		"	   <td>14-15</td><td id='activitat'>Activitat de matí</td>"+
+		"      <td>12-13</td><td id='activitat'>Activitat de matí</td></tr>"+
+		"  <tr><td>17-18</td><td id='activitat'>Activitat de matí</td>"+
+		"	   <td>21-22</td><td id='activitat'>Activitat de matí</td>"+
+		"      <td>19-20</td><td id='activitat'><i class='fa fa-calendar-check-o'></i> Pessebrada</td></tr>"+
+		"  <tr><td>24-25</td><td id='activitat'><i class='fa fa-file-pdf-o'></i> Excursió d\' un dia</td>"+
+		"	   <td>28-29</td><td id='activitat'><i class='fa fa-file-pdf-o'></i> Excursió de dos dies</td>"+
+		"      <td></td><td></td id='activitat'></tr>"+
+		"  <tr><td>31-1</td><td id='activitat'>Lliure</td>"+
+		"	   <td></td><td id='activitat'></td>"+
+		"      <td>27-30</td><td id='activitat'><i class='fa fa-file-pdf-o'></i> Excursió de Nadal</td></tr>"+
 		"</table>";
 	}else if (i==1){
 		document.getElementById("text").innerHTML =
@@ -324,21 +324,21 @@ changePioners = function(i){
 		"<h2>Calendari</h2>"+
 		"<table style='width:100%'>"+
 		"  <tr><th colspan='2'>OCTUBRE</th><th colspan='2'>NOVEMBRE</th><th colspan='2'>DESEMBRE</th></tr>"+
-		"  <tr><td>3-4</td><td>Activitat de matí</td>"+
-		"	   <td>7-8</td><td>Activitat de matí</td>"+
-		"      <td>5-6</td><td>Lliure</td></tr>"+
-		"  <tr><td>10-11</td><td>Lliure</td>"+
-		"	   <td>14-15</td><td><i class='fa fa-file-pdf-o'></i> Excursió d\' un dia</td>"+
-		"      <td>12-13</td><td>Activitat de matí</td></tr>"+
-		"  <tr><td>17-18</td><td><i class='fa fa-file-pdf-o'></i> Excursió de dos dies</td>"+
-		"	   <td>21-22</td><td>Activitat de matí</td>"+
-		"      <td>19-20</td><td><i class='fa fa-calendar-check-o'></i> Pessebrada</td></tr>"+
-		"  <tr><td>24-25</td><td>Activitat de matí</td>"+
-		"	   <td>28-29</td><td>Activitat de matí</td>"+
-		"      <td></td><td></td></tr>"+
-		"  <tr><td>31-1</td><td>Lliure</td>"+
-		"	   <td></td><td></td>"+
-		"      <td>27-30</td><td><i class='fa fa-file-pdf-o'></i> <i class='fa fa-info-circle'></i> Ruta de Nadal</td></tr>"+
+		"  <tr><td>3-4</td><td id='activitat'>Activitat de matí</td>"+
+		"	   <td>7-8</td><td id='activitat'>Activitat de matí</td>"+
+		"      <td>5-6</td><td id='activitat'>Lliure</td></tr>"+
+		"  <tr><td>10-11</td><td id='activitat'>Lliure</td>"+
+		"	   <td>14-15</td><td id='activitat'><i class='fa fa-file-pdf-o'></i> Excursió d\' un dia</td>"+
+		"      <td>12-13</td><td id='activitat'>Activitat de matí</td></tr>"+
+		"  <tr><td>17-18</td><td id='activitat'><i class='fa fa-file-pdf-o'></i> Excursió de dos dies</td>"+
+		"	   <td>21-22</td><td id='activitat'>Activitat de matí</td>"+
+		"      <td>19-20</td><td id='activitat'><i class='fa fa-calendar-check-o'></i> Pessebrada</td></tr>"+
+		"  <tr><td>24-25</td><td id='activitat'>Activitat de matí</td>"+
+		"	   <td>28-29</td><td id='activitat'>Activitat de matí</td>"+
+		"      <td></td><td id='activitat'></td></tr>"+
+		"  <tr><td>31-1</td><td id='activitat'>Lliure</td>"+
+		"	   <td></td><td id='activitat'></td>"+
+		"      <td>27-30</td><td id='activitat'><i class='fa fa-file-pdf-o'></i> <i class='fa fa-info-circle'></i> Ruta de Nadal</td></tr>"+
 		"</table>";
 	}else if (i==1){
 		document.getElementById("text").innerHTML =
@@ -414,21 +414,21 @@ changeRovers = function(i){
 		"<h2>Calendari</h2>"+
 		"<table style='width:100%'>"+
 		"  <tr><th colspan='2'>OCTUBRE</th><th colspan='2'>NOVEMBRE</th><th colspan='2'>DESEMBRE</th></tr>"+
-		"  <tr><td>3-4</td><td>Activitat de matí</td>"+
-		"	   <td>7-8</td><td>Activitat de matí</td>"+
-		"      <td>5-6</td><td>Lliure</td></tr>"+
+		"  <tr><td>3-4</td><td id='activitat'>Activitat de matí</td>"+
+		"	   <td>7-8</td><td id='activitat'>Activitat de matí</td>"+
+		"      <td>5-6</td><td id='activitat'>Lliure</td></tr>"+
 		"  <tr><td>10-11</td><td>Lliure</td>"+
-		"	   <td>14-15</td><td><i class='fa fa-file-pdf-o'></i> Excursió d\' un dia</td>"+
-		"      <td>12-13</td><td>Activitat de matí</td></tr>"+
-		"  <tr><td>17-18</td><td>Activitat de matí</td>"+
-		"	   <td>21-22</td><td>Activitat de matí</td>"+
-		"      <td>19-20</td><td><i class='fa fa-calendar-check-o'></i> Pessebrada</td></tr>"+
-		"  <tr><td>24-25</td><td>Activitat de tarda (div)</td>"+
-		"	   <td>28-29</td><td>Excursió de dos dies</td>"+
-		"      <td></td><td></td></tr>"+
-		"  <tr><td>31-1</td><td>Lliure</td>"+
-		"	   <td></td><td></td>"+
-		"      <td>27-30</td><td><i class='fa fa-file-pdf-o'></i> Excursió de Nadal</td></tr>"+
+		"	   <td>14-15</td><td id='activitat'><i class='fa fa-file-pdf-o'></i> Excursió d\' un dia</td>"+
+		"      <td>12-13</td><td id='activitat'>Activitat de matí</td></tr>"+
+		"  <tr><td>17-18</td><td id='activitat'>Activitat de matí</td>"+
+		"	   <td>21-22</td><td id='activitat'>Activitat de matí</td>"+
+		"      <td>19-20</td><td id='activitat'><i class='fa fa-calendar-check-o'></i> Pessebrada</td></tr>"+
+		"  <tr><td>24-25</td><td id='activitat'>Activitat de tarda (div)</td>"+
+		"	   <td>28-29</td><td id='activitat'>Excursió de dos dies</td>"+
+		"      <td></td><td id='activitat'></td></tr>"+
+		"  <tr><td>31-1</td><td id='activitat'>Lliure</td>"+
+		"	   <td></td><td id='activitat'></td>"+
+		"      <td>27-30</td><td id='activitat'><i class='fa fa-file-pdf-o'></i> Excursió de Nadal</td></tr>"+
 		"</table>";
 	}else if (i==1){
 		document.getElementById("text").innerHTML =

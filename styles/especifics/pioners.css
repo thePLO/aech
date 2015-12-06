@@ -11,7 +11,15 @@ h1 {
 h2 {
     color: #ff0000;
 }
-
+table {
+    border-collapse: collapse;
+}
+td, th{  
+   text-align: center;
+}
+td#activitat{
+    text-align: left;
+}
 ul#submenu {
     padding: 0;
     margin-bottom: 11px;

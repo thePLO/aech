@@ -15,7 +15,15 @@ ul#submenu {
     padding: 0;
     margin-bottom: 11px;
 }
-
+table {
+    border-collapse: collapse;
+}
+td, th{  
+   text-align: center;
+}
+td#activitat{
+    text-align: left;
+}
 ul#submenu li {
     display: inline;
     margin-right: 3px;
