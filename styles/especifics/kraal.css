@@ -11,6 +11,43 @@ h1 {
 h2 {
     color: #000000;
 }
+table {
+    border-collapse: collapse;
+}table#monis {
+   text-align: center;
+}td#monis_castors{
+   background-color: #f2e6ff;
+}td#monis_llops{
+   background-color: #eaeaea;
+}td#monis_rangers{
+   background-color: #cbe5fd;
+}td#monis_pios{
+   background-color: #f9d4d4;
+}td#monis_rovers{
+   background-color: #d0c9aa;
+}
+td#logo{
+   text-align: center;
+}
+th#banc_castors{
+   color: #be80ff; text-align: right; padding-right: 5;
+}th#banc_llops{
+   color: #7F7F7F; text-align: right; padding-right: 10;
+}th#banc_rangers{
+   color: #0085ff; text-align: right; padding-left: 5;
+}th#banc_pios{
+   color: #ff0000; text-align: right; padding: 5;
+}th#banc_rovers{
+   color: #7F764D; text-align: right;
+}th#banc_general{
+   color: #407D22; text-align: right;
+}
+
+img#logoCaixa {
+    float: top;
+    margin: 0 0 10px 10px;
+}
+
 ul#submenu {
     padding: 0;
     margin-bottom: 11px;

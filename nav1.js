@@ -489,16 +489,21 @@ if(document.getElementById("navK2")){
 }
 changeKraal = function(i){
 	if (i==0){
-		document.getElementById("text").innerHTML =
+		var t = document.getElementById("text");
+		t.innerHTML =
 		"<h2>Dades Bancàries</h2>"+
 		"<table style='width:100%'>"+
-		"  <tr><td>CASTORS - LLÚDRIGUES</td><td>ES57 2100 0810 2702 0086 1703</td>"+
-		"  <tr><td>LLOPS - DAINES</td><td>ES94 2100 0810 2102 0086 1816</td>"+
-		"  <tr><td>RÀNGERS - GUIES</td><td>ES31 2100 0810 2602 0086 1929</td>"+
-		"  <tr><td>PIONERS - CARAVEL·LES</td><td>ES85 2100 0810 2802 0086 2023</td>"+
-		"  <tr><td>RÓVERS</td><td>ES25 2100 0810 2202 0086 2136</td>"+
-		"  <tr><td>GENERAL</td><td>ES47 2100 0810 2502 0086 1690</td>"+
-		"<img src='gfx/lacaixa.jpg'";
+		"  <tr><th id='banc_castors'>CASTORS - LLÚDRIGUES -></td><td> ES57 2100 0810 2702 0086 1703</td><td rowspan='6' id='logo'></td>"+
+		"  <tr><th id='banc_llops'>LLOPS - DAINES -></td><td> ES94 2100 0810 2102 0086 1816</td>"+
+		"  <tr><th id='banc_rangers'>RÀNGERS - GUIES -></td><td> ES31 2100 0810 2602 0086 1929</td>"+
+		"  <tr><th id='banc_pios'>PIONERS - CARAVEL·LES -></td><td> ES85 2100 0810 2802 0086 2023</td>"+
+		"  <tr><th id='banc_rovers'>RÓVERS -></td><td> ES25 2100 0810 2202 0086 2136</td>"+
+		"  <tr><th id='banc_general'>GENERAL -></td><td> ES47 2100 0810 2502 0086 1690</td>";
+		
+		var l = document.getElementById("logo");
+		var i = document.createElement("IMG");
+		i.setAttribute("src", "gfx/lacaixa.jpg");
+		l.appendChild(i);
 
 	}else if (i==1){
 		document.getElementById("text").innerHTML =
