@@ -1,7 +1,6 @@
 body {
     background-color: #f2e6ff; 
 }
-
 h1 {
     font-family: Georgia, serif;
     border-bottom: 3px solid #be80ff;
@@ -11,7 +10,6 @@ h1 {
 h2 {
     color: #be80ff;
 }
-
 table {
     border-collapse: collapse;
 }

@@ -70,9 +70,9 @@ if(document.getElementById("navC2")){
 	"<ul id='submenu'>" +
 	"<li><a href='1_castors.html'>Qui som?</a></li>" +
 	"<li><a href='#' onClick='changeCastors(0)'>Calendari</a></li>" +
-	"<li><a href='#' onClick='changeCastors(1)'>Objectius</a></li>" +
-	"<li><a href='#' onClick='changeCastors(2)'>Monitors</a></li>" +
-	"<li><a href='#' onClick='changeCastors(3)'>Fotos i Video</a></li>" +
+	"<li><a href='##' onClick='changeCastors(1)'>Objectius</a></li>" +
+	"<li><a href='###' onClick='changeCastors(2)'>Monitors</a></li>" +
+	"<li><a href='####' onClick='changeCastors(3)'>Fotos i Video</a></li>" +
 	"</ul>";
 }
 changeCastors = function(i){
