@@ -1,12 +1,9 @@
 body {
     background-color: #cbe5fd; 
 }
-
 h1 {
-    font-family: Georgia, serif;
     border-bottom: 3px solid #0085ff;
     color: #0085ff;
-    font-size: 30px;
 }
 h2 {
     color: #0085ff;
