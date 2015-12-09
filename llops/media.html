@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <html><meta charset="utf-8"><link rel="stylesheet" href="../font-awesome-4.5.0/css/font-awesome.min.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="../galleria/galleria-1.4.2.min.js"></script>
+<script src="../galleria/galleria.picasa.min.js"></script>
+<style>
+    .galleria{ width: 740px; height: 440px; background: #ffffff; text-align: center; }
+</style>
 <head>
 	<title>AECh Ll/D</title>
 	<link href="../styles/web.css" rel="stylesheet">
@@ -14,11 +20,27 @@
 			<nav id="navL2"></nav>
 			<div id="text">
 				<h2>Fotos i Videos</h2>
-				<ul>
-				  <li>Picasa</li>
-				  <li>Youtube</li>
-				</ul>
+				<table style='width:100%'>
+					<tr>
+						<td>Totes les fotos:</td>
+						<td>Tots els videos</td>
+					</tr>
+					<tr>
+						<td><br><a href="https://picasaweb.google.com/105609615630217722322"><i class="fa fa-camera fa-5x"></i></a></td>
+						<td><br><a href="https://www.youtube.com/user/llopsaech/videos"><i class="fa fa-video-camera fa-5x"></i></a></td>
+					</tr>
+				</table>
+				<br>			
 			</div>
+			<div class="galleria"></div>
+	        <script>
+	           	Galleria.loadTheme('../galleria/themes/classic/galleria.classic.min.js');
+	            Galleria.run('.galleria', {
+			       	picasa: 'user:105609615630217722322',
+			       	autoplay: 5000,
+			       	sort: 'date-posted-asc'
+			});
+	        </script>
 		</div>
 	</div>
 	<script src="../nav.js"></script>

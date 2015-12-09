@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <html><meta charset="utf-8"><link rel="stylesheet" href="../font-awesome-4.5.0/css/font-awesome.min.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="galleria/galleria-1.4.2.min.js"></script>
+<script src="galleria/galleria.picasa.min.js"></script>
+<style>
+    .galleria{ width: 740px; height: 440px; background: #ffffff; text-align: center; }
+</style>
 <head>
 	<title>AECh</title>
 	<link href="styles/web.css" rel="stylesheet">
@@ -16,13 +22,32 @@
 			<nav id="navI2">
 				<ul id='submenu'><li><a href='index.html'>Qui som?</a></li><li><a href='xarxes.html'>Xarxes</a></li><li><a href='inscripcions.html'>Inscripcions</a></li><li><a href='cdp.html'>Comissió de Pares</a></li><li><a href='historic.html'>Històric de Fotos</a></li></ul>
 			</nav>
+
 			<div id="text">
 				<h2>Històric de Fotos</h2>
-				<ul>
-				  <li><a href='https://picasaweb.google.com/105704972336970035663'>Picasa</a></li>
-				  <li><a href='https://www.youtube.com/user/AgrEscoltaChampagnat/videos'>Youtube</a></li>
-				</ul>
+				<p>Totes les fotos històriques <a href='https://picasaweb.google.com/105704972336970035663'>aquí</a></li></p>
+				<p>Tots els videos <a href='https://www.youtube.com/user/AgrEscoltaChampagnat/videos'>aquí</a></li></p>
+				<p>Alguns records aleatoris:</p>
 			</div>
+
+			<div class="galleria"></div>
+	        <script>
+				var albums=[
+					'CLL20122013', 'LLD20122013', 'Pessebrada2012', 'CLL20112012', 'Queralbs_2012', 'Costellada2012', 'Curs20042005', 'Curs20032004', 'Curs20022003', 'Curs20012002', 'Curs19781979', 'Curs19771978',
+					'Curs19761977', 'Curs19751976', 'Curs19741975', 'Curs19731974', 'Curs19721973', 'Curs19721973'
+				]
+				var randomAlbumN = Math.random() * albums.length;
+				console.log(Math.floor(randomAlbumN));
+	           	Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
+	            Galleria.run('.galleria', {
+			       	picasa: 'useralbum:105704972336970035663/'+albums[Math.floor(randomAlbumN)],
+			       	autoplay: 5000,
+			    	picasaOptions: {
+			        	sort: 'date-posted-asc',
+
+			    }
+			});
+	        </script>
 	</div>
 	<script>document.getElementById("m_in").className = "active";</script>
 </body>
