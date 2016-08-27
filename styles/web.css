@@ -43,6 +43,26 @@ ul#menu li a.active {
     color: #696969;
     border-radius: 4px 4px 0 0;
 }
+
+ul#ssubmenu {
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+ul#ssubmenu li {
+    text-align: center;
+    display: inline;
+    margin-right: 3px;
+}
+
+ul#ssubmenu li a.active {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #696969;
+    border-radius: 4px 4px 0 0;
+}
+
 div#center{
     text-align: center;
 }

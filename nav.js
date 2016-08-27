@@ -53,6 +53,14 @@ if(document.getElementById("navP2")){
 	"<li><a href='../pioners/media.html'>Fotos i Video</a></li>" +
 	"</ul>";
 }
+if(document.getElementById("navPC")){
+	document.getElementById("navPC").innerHTML =
+	"<ul id='ssubmenu'>" +
+	"<li><a id='ssm_1t' href='../pioners/calendari1.html'>1er Trimestre</a></li>" +
+	"<li><a id='ssm_2t' href='../pioners/calendari2.html'>2on Trimestre</a></li>" +
+	"<li><a id='ssm_3t' href='../pioners/calendari3.html'>3er Trimestre</a></li>" +
+	"</ul>";
+}
 //ro
 if(document.getElementById("navR2")){
 	document.getElementById("navR2").innerHTML =

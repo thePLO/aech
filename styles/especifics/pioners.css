@@ -24,6 +24,7 @@ th#mesos{
 td#dia{
     background-color: #f9d4d4;
 }
+
 ul#menu li a:not(.active) {
     background-color: #ffaaaa;
     padding: 10px 20px;
@@ -55,5 +56,26 @@ ul#submenu li a {
 
 ul#submenu li a:hover {
     color: white;
-    background-color: #ff0000;
+    background-color: #ffaaaa;
+}
+
+
+ul#ssubmenu li a.active {
+    background-color: #ffaaaa;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: #000000;
+    border-radius: 4px 4px 0 0;
+}
+ul#ssubmenu li a:not(.active) {
+    background-color: #f9d4d4;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: #696969;
+    border-radius: 4px 4px 0 0;
+}
+
+ul#ssubmenu li a:hover:not(.active) {
+    color: white;
+    background-color: #ffaaaa;
 }
