@@ -1,3 +1,164 @@
+//calendaris
+var defaultMes = 1;
+var dadesCal=[
+	[//castors
+		[//1
+			[//octubre
+				["x-x","castors Activitat de matí11"],["x-x","Activitat de matí12"],["x-x","Activitat de matí13"],["x-x","Activitat de matí14"],["x-x","Activitat de matí15"]],
+			[//novembre
+				["x-x","Activitat de matí21"],["x-x","Activitat de matí22"],["x-x","Activitat de matí23"],["x-x","Activitat de matí24"],["x-x","Activitat de matí25"]],
+			[//desembre
+				["x-x","Activitat de matí31"],["x-x","Activitat de matí23"],["x-x","Activitat de matí33"],["x-x","Activitat de matí34"],["x-x","Activitat de matí35"]]],
+		[//2
+			[//gener
+				["x-x","Activitat de matí11"],["x-x","Activitat de matí12"],["x-x","Activitat de matí13"],["x-x","Activitat de matí14"],["x-x","Activitat de matí15"]],
+			[//febrer
+				["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","4 febrer"],["x-x","Activitat de matí"]],
+			[//març
+				["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"]]],
+		[//3
+			[//abril
+				["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"]],
+			[//maig
+				["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"]],
+			[//juny
+				["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Campaments"]]]
+	],[//llops
+		[//1
+			[//octubre
+				["x-x","llops Activitat de matí11"],["x-x","Activitat de matí12"],["x-x","Activitat de matí13"],["x-x","Activitat de matí14"],["x-x","Activitat de matí15"]],
+			[//novembre
+				["x-x","Activitat de matí21"],["x-x","Activitat de matí22"],["x-x","Activitat de matí23"],["x-x","Activitat de matí24"],["x-x","Activitat de matí25"]],
+			[//desembre
+				["x-x","Activitat de matí31"],["x-x","Activitat de matí23"],["x-x","Activitat de matí33"],["x-x","Activitat de matí34"],["x-x","Activitat de matí35"]]],
+		[//2
+			[//gener
+				["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"]],
+			[//febrer
+				["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"]],
+			[//març
+				["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"]]],
+		[//3
+			[//abril
+				["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"]],
+			[//maig
+				["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"]],
+			[//juny
+				["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Campaments"]]]
+	],[//ràngers
+		[//1
+			[//octubre
+				["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"]],
+			[//novembre
+				["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"]],
+			[//desembre
+				["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"]]],
+		[//2
+			[//gener
+				["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"]],
+			[//febrer
+				["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"]],
+			[//març
+				["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"]]],
+		[//3
+			[//abril
+				["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"]],
+			[//maig
+				["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"]],
+			[//juny
+				["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Campaments"]]]
+	],[//pios
+		[//1
+			[//octubre
+				["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"]],
+			[//novembre
+				["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"]],
+			[//desembre
+				["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"]]],
+		[//2
+			[//gener
+				["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"]],
+			[//febrer
+				["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"]],
+			[//març
+				["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"]]],
+		[//3
+			[//abril
+				["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"]],
+			[//maig
+				["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"]],
+			[//juny
+				["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Campaments"]]]
+	],[//róvers
+		[//1
+			[//octubre
+				["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"]],
+			[//novembre
+				["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"]],
+			[//desembre
+				["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"]]],
+		[//2
+			[//gener
+				["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"]],
+			[//febrer
+				["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"]],
+			[//març
+				["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"]]],
+		[//3
+			[//abril
+				["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"]],
+			[//maig
+				["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"]],
+			[//juny
+				["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Activitat de matí"],["x-x","Campaments"]]]
+	]
+];
+//<i class='fa fa-file-pdf-o'></i> PDF
+//<i class='fa fa-info-circle'></i> INFO
+//<i class='fa fa-calendar-check-o'></i> CAL
+
+function setCal(b,n){
+	for(var i = 0;i<3;i++){
+		document.getElementById("ssm_"+(i+1)+"t").className = "";
+	}
+	document.getElementById("Cal").innerHTML = getCal(b,n);
+	document.getElementById("ssm_"+n+"t").className = "active";
+}
+function getCal(b,n){
+
+	var calendari;
+	if(n==1) calendari = "<tr><th colspan='2' id='mesos'>OCTUBRE</th><th colspan='2' id='mesos'>NOVEMBRE</th><th colspan='2' id='mesos'>DESEMBRE</th></tr>";
+	else if(n==2) calendari = "<tr><th colspan='2' id='mesos'>GENER</th><th colspan='2' id='mesos'>FEBRER</th><th colspan='2' id='mesos'>MARÇ</th></tr>";
+	else calendari = "<tr><th colspan='2' id='mesos'>ABRIL</th><th colspan='2' id='mesos'>MAIG</th><th colspan='2' id='mesos'>JUNY</th></tr>";
+	
+	calendari += 
+		"<tr><td id='dia'>"+dadesCal[b-1][n-1][0][0][0]+"</td><td id='activitat'>"+dadesCal[b-1][n-1][0][0][1]+"</td>"+
+			"<td id='dia'>"+dadesCal[b-1][n-1][1][0][0]+"</td><td id='activitat'>"+dadesCal[b-1][n-1][1][0][1]+"</td>"+
+			"<td id='dia'>"+dadesCal[b-1][n-1][2][0][0]+"</td><td id='activitat'>"+dadesCal[b-1][n-1][2][0][1]+"</td></tr>"+
+		"<tr><td id='dia'>"+dadesCal[b-1][n-1][0][1][0]+"</td><td id='activitat'>"+dadesCal[b-1][n-1][0][1][1]+"</td>"+
+			"<td id='dia'>"+dadesCal[b-1][n-1][1][1][0]+"</td><td id='activitat'>"+dadesCal[b-1][n-1][1][1][1]+"</td>"+
+			"<td id='dia'>"+dadesCal[b-1][n-1][2][1][0]+"</td><td id='activitat'>"+dadesCal[b-1][n-1][2][1][1]+"</td></tr>"+
+		"<tr><td id='dia'>"+dadesCal[b-1][n-1][0][2][0]+"</td><td id='activitat'>"+dadesCal[b-1][n-1][0][2][1]+"</td>"+
+			"<td id='dia'>"+dadesCal[b-1][n-1][1][2][0]+"</td><td id='activitat'>"+dadesCal[b-1][n-1][1][2][1]+"</td>"+
+			"<td id='dia'>"+dadesCal[b-1][n-1][2][2][0]+"</td><td id='activitat'>"+dadesCal[b-1][n-1][2][2][1]+"</td></tr>"+
+		"<tr><td id='dia'>"+dadesCal[b-1][n-1][0][3][0]+"</td><td id='activitat'>"+dadesCal[b-1][n-1][0][3][1]+"</td>"+
+			"<td id='dia'>"+dadesCal[b-1][n-1][1][3][0]+"</td><td id='activitat'>"+dadesCal[b-1][n-1][1][3][1]+"</td>";
+	if(n<3){
+		calendari += 
+			"<td id='dia'>"+dadesCal[b-1][n-1][2][3][0]+"</td><td id='activitat'>"+dadesCal[b-1][n-1][2][3][1]+"</td></tr>"+
+		"<tr><td id='dia'>"+dadesCal[b-1][n-1][0][4][0]+"</td><td id='activitat'>"+dadesCal[b-1][n-1][0][4][1]+"</td>"+
+			"<td id='dia'>"+dadesCal[b-1][n-1][1][4][0]+"</td><td id='activitat'>"+dadesCal[b-1][n-1][1][4][1]+"</td>"+
+			"<td id='dia'>"+dadesCal[b-1][n-1][2][4][0]+"</td><td id='activitat'>"+dadesCal[b-1][n-1][2][4][1]+"</tr>";
+	}else{
+		calendari += 
+			"<th colspan='2' id='mesos'>JULIOL</th></tr>"+
+		"<tr><td id='dia'>"+dadesCal[b-1][n-1][0][4][0]+"</td><td id='activitat'>"+dadesCal[b-1][n-1][0][4][1]+"</td>"+
+			"<td id='dia'>"+dadesCal[b-1][n-1][1][4][0]+"</td><td id='activitat'>"+dadesCal[b-1][n-1][1][4][1]+"</td>"+
+			"<td id='dia'>"+dadesCal[b-1][n-1][2][4][0]+"</td><td id='activitat'>"+dadesCal[b-1][n-1][2][4][1]+"</tr>";
+	}
+	return calendari;
+}
+//menu
 document.getElementById("nav01").innerHTML =
 "<ul id='menu'>" +
 "<li><a id='m_in' href='../index.html'>AECH</a></li>" +
@@ -20,6 +181,15 @@ if(document.getElementById("navC2")){
 	"<li><a href='../castors/media.html'>Fotos i Video</a></li>" +
 	"</ul>";
 }
+if(document.getElementById("navCC")){
+	document.getElementById("navCC").innerHTML =
+	"<ul id='ssubmenu'>" +
+	"<li><a id='ssm_1t' href='javascript:setCal(1,1);'>1er Trimestre</a></li>" +
+	"<li><a id='ssm_2t' href='javascript:setCal(1,2);'>2on Trimestre</a></li>" +
+	"<li><a id='ssm_3t' href='javascript:setCal(1,3);'>3er Trimestre</a></li>" +
+	"</ul>";
+	setCal(1,defaultMes);
+}
 //llops
 if(document.getElementById("navL2")){
 	document.getElementById("navL2").innerHTML =
@@ -31,6 +201,15 @@ if(document.getElementById("navL2")){
 	"<li><a href='../llops/media.html'>Fotos i Video</a></li>" +
 	"</ul>";
 }
+if(document.getElementById("navLC")){
+	document.getElementById("navLC").innerHTML =
+	"<ul id='ssubmenu'>" +
+	"<li><a id='ssm_1t' href='javascript:setCal(2,1);'>1er Trimestre</a></li>" +
+	"<li><a id='ssm_2t' href='javascript:setCal(2,2);'>2on Trimestre</a></li>" +
+	"<li><a id='ssm_3t' href='javascript:setCal(2,3);'>3er Trimestre</a></li>" +
+	"</ul>";
+	setCal(2,defaultMes);
+}
 //ran
 if(document.getElementById("navr2")){
 	document.getElementById("navr2").innerHTML =
@@ -41,6 +220,15 @@ if(document.getElementById("navr2")){
 	"<li><a href='../rangers/monitors.html'>Monitors</a></li>" +
 	"<li><a href='../rangers/media.html'>Fotos i Video</a></li>" +
 	"</ul>";
+}
+if(document.getElementById("navrC")){
+	document.getElementById("navrC").innerHTML =
+	"<ul id='ssubmenu'>" +
+	"<li><a id='ssm_1t' href='javascript:setCal(3,1);'>1er Trimestre</a></li>" +
+	"<li><a id='ssm_2t' href='javascript:setCal(3,2);'>2on Trimestre</a></li>" +
+	"<li><a id='ssm_3t' href='javascript:setCal(3,3);'>3er Trimestre</a></li>" +
+	"</ul>";
+	setCal(3,defaultMes);
 }
 //pios
 if(document.getElementById("navP2")){
@@ -56,10 +244,11 @@ if(document.getElementById("navP2")){
 if(document.getElementById("navPC")){
 	document.getElementById("navPC").innerHTML =
 	"<ul id='ssubmenu'>" +
-	"<li><a id='ssm_1t' href='../pioners/calendari1.html'>1er Trimestre</a></li>" +
-	"<li><a id='ssm_2t' href='../pioners/calendari2.html'>2on Trimestre</a></li>" +
-	"<li><a id='ssm_3t' href='../pioners/calendari3.html'>3er Trimestre</a></li>" +
+	"<li><a id='ssm_1t' href='javascript:setCal(4,1);'>1er Trimestre</a></li>" +
+	"<li><a id='ssm_2t' href='javascript:setCal(4,2);'>2on Trimestre</a></li>" +
+	"<li><a id='ssm_3t' href='javascript:setCal(4,3);'>3er Trimestre</a></li>" +
 	"</ul>";
+	setCal(4,defaultMes);
 }
 //ro
 if(document.getElementById("navR2")){
@@ -71,6 +260,15 @@ if(document.getElementById("navR2")){
 	"<li><a href='../rovers/consellers.html'>Monitors</a></li>" +
 	"<li><a href='../rovers/media.html'>Fotos i Video</a></li>" +
 	"</ul>";
+}
+if(document.getElementById("navRC")){
+	document.getElementById("navRC").innerHTML =
+	"<ul id='ssubmenu'>" +
+	"<li><a id='ssm_1t' href='javascript:setCal(5,1);'>1er Trimestre</a></li>" +
+	"<li><a id='ssm_2t' href='javascript:setCal(5,2);'>2on Trimestre</a></li>" +
+	"<li><a id='ssm_3t' href='javascript:setCal(5,3);'>3er Trimestre</a></li>" +
+	"</ul>";
+	setCal(5,defaultMes);
 }
 //kraal
 if(document.getElementById("navK2")){

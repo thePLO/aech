@@ -57,3 +57,23 @@ ul#submenu li a:hover {
     color: white;
     background-color: #7F7F7F;
 }
+
+ul#ssubmenu li a.active {
+    background-color: #c7c7c7;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: #000000;
+    border-radius: 4px 4px 0 0;
+}
+ul#ssubmenu li a:not(.active) {
+    background-color: #eaeaea;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: #696969;
+    border-radius: 4px 4px 0 0;
+}
+
+ul#ssubmenu li a:hover:not(.active) {
+    color: white;
+    background-color: #7F7F7F;
+}
