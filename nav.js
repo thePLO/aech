@@ -118,11 +118,14 @@ var dadesCal=[
 //<i class='fa fa-calendar-check-o'></i> CAL
 
 function setCal(b,n){
-	for(var i = 0;i<3;i++){
-		document.getElementById("ssm_"+(i+1)+"t").className = "";
+	if(n<=defaultMes){
+		for(var i = 0;i<3;i++){
+			document.getElementById("ssm_"+(i+1)+"t").className = "";
+		}
+		document.getElementById("Cal").innerHTML = getCal(b,n);
+		document.getElementById("ssm_"+n+"t").className = "active";
 	}
-	document.getElementById("Cal").innerHTML = getCal(b,n);
-	document.getElementById("ssm_"+n+"t").className = "active";
+	
 }
 function getCal(b,n){
 
