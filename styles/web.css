@@ -78,7 +78,10 @@ footer{
     font-size: 13px;
     color: #696969;
 }
-
+.text{
+    width:100%;
+    text-align: left;
+}
 .blogitem{ 
     padding: 5px;
     background-color: #91c378;
