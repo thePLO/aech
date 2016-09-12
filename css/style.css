@@ -1,0 +1,99 @@
+*{box-sizing: border-box; margin:0; padding:0;}
+/*	--agrupament-c1: #d4eecf; --castors-c1: #f2e6ff; --llops-c1: #eaeaea; --rangers-c1: #cbe5fd; --pioners-c1: #f9d4d4; --rovers-c1: #e5e2d3; --pares-c1: #a14aa6; --kraal-c1: #d6d6d6;
+	--agrupament-c2: #91c378; --castors-c2: #e0c2ff; --llops-c2: #c7c7c7; --rangers-c2: #a6d4ff; --pioners-c2: #ffaaaa; --rovers-c2: #cec59c; --pares-c1: #84298a; --kraal-c2: #c7c7c7;
+	--agrupament-c3: #407D22; --castors-c3: #be80ff; --llops-c3: #7F7F7F; --rangers-c3: #0085ff; --pioners-c3: #ff0000; --rovers-c3: #7F764D; --pares-c1: #810089; --kraal-c3: #000000;*/
+
+body{font-family: "Trebuchet MS", Verdana, sans-serif;}
+
+/*HEADER*/
+	header{width: 100vw;}
+	.header-gfx{display: block; margin:0 auto; padding:10px 0px 10px 0px;max-width: 90vw;}
+		/*--MENU--*/
+		#menu ul{text-align: center;}
+		#menu li{display: inline-block; padding-bottom:2px; padding-top:4px; border-bottom: 3px solid white;}
+		#menu li.agrupament.active{border-bottom: 3px solid #46a138;}
+		#menu li.castors.active{border-bottom: 3px solid #be80ff;}
+		#menu li.llops.active{border-bottom: 3px solid #7F7F7F;}
+		#menu li.rangers.active{border-bottom: 3px solid #0085ff;}
+		#menu li.pioners.active{border-bottom: 3px solid #ff0000;}
+		#menu li.rovers.active{border-bottom: 3px solid #7F764D;}
+		#menu li.pares.active{border-bottom: 3px solid #810089;}
+		#menu li.kraal.active{border-bottom: 3px solid #ff8400;}
+		.ico{display: block; margin:0 3px;
+			padding: 5px;
+			width:15vw; height:15vw;
+			max-width:60px; max-height:60px;
+			border-radius:50%; cursor: pointer;}
+		.ico.agrupament{background-color: #91c378;}
+		.ico.agrupament:hover, .ico.agrupament.active{background-color: #46a138;}
+		.ico.castors{background-color: #e0c2ff;}
+		.ico.castors:hover, .ico.castors.active{background-color: #be80ff;}
+		.ico.llops{background-color: #c7c7c7;}
+		.ico.llops:hover, .ico.llops.active{background-color: #7F7F7F;}
+		.ico.rangers{background-color: #a6d4ff;}
+		.ico.rangers:hover, .ico.rangers.active{background-color: #0085ff;}
+		.ico.pioners{background-color: #ff5454;}
+		.ico.pioners:hover, .ico.pioners.active{background-color: #ff0000;}
+		.ico.rovers{background-color: #cec59c;}
+		.ico.rovers:hover, .ico.rovers.active{background-color: #7F764D;}
+		.ico.pares{background-color: #84298a;}
+		.ico.pares:hover, .ico.pares.active{background-color: #810089;}
+		.ico.kraal{background-color: #ffaa4e;}
+		.ico.kraal:hover, .ico.kraal.active{background-color: #ff8400;}
+/*FOOTER*/
+	footer{
+		border-top: 2px solid black;
+		padding: 40px;
+		/*color: white;*/
+		text-align: center;
+	}
+	.agrupament footer{background-color: #91c378; border-color: #46a138;}
+	.castors footer{background-color: #e0c2ff; border-color: #be80ff;}
+	.llops footer{background-color: #c7c7c7; border-color: #7F7F7F;}
+	.rangers footer{background-color: #a6d4ff; border-color: #0085ff;}
+	.pioners footer{background-color: #ff5454; border-color: #ff0000;}
+	.rovers footer{background-color: #cec59c; border-color: #7F764D;}
+	.pares footer{background-color: #84298a; border-color: #810089; color:white;}
+	.kraal footer{background-color: #ffaa4e; border-color: #ff8400;}
+/*--SECCIONS--*/
+	/*avislegal*/textarea{margin-top: 20px}
+	section{padding: 20px 5vw;max-width:920px; margin: 0 auto;}
+	h1{padding-top:10px; border-bottom: 2px solid black; text-align: center;}
+	h2{border-bottom: 2px solid black; text-align: left;}
+	section p{padding-top: 10px;}
+	section ul{padding: 20px;}
+	/*section.xarxes,section.kraal_monis,section.carrecs,section.banc,section.links,section.sap,*/
+	section.center{text-align: center;}
+	.agrupament h1,.agrupament h2,.agrupament h3{color: #46a138; border-color: #46a138;}
+	.castors h1,.castors h2,.castors h3{color: #be80ff; border-color: #be80ff;}
+	.llops h1,.llops h2,.llops h3{color: #7F7F7F; border-color: #7F7F7F;}
+	.rangers h1,.rangers h2,.rangers h3{color: #0085ff; border-color: #0085ff;}
+	.pioners h1,.pioners h2,.pioners h3{color: #ff0000; border-color: #ff0000;}
+	.rovers h1,.rovers h2,.rovers h3{color: #7F764D; border-color: #7F764D;}
+	.pares h1,.pares h2,.pares h3{color: #810089; border-color: #810089;}
+	.kraal h1,.kraal h2,.kraal h3{color: #ff8400; border-color: #ff8400;}
+	section.xarxes div{max-width: 66vw; margin:0 auto;}
+	section.xarxes a{text-decoration: none; color: #91c378;} section.xarxes a:hover{color: #46a138;}
+	.banc span.ca{font-weight: bold; color: #be80ff;}
+	.banc span.ll{font-weight: bold; color: #7F7F7F;}
+	.banc span.ra{font-weight: bold; color: #0085ff;}
+	.banc span.pi{font-weight: bold; color: #ff0000;}
+	.banc span.ro{font-weight: bold; color: #7F764D;}
+	.banc span.ge{font-weight: bold; color: #46a138;}
+	.sap a{text-decoration: underline; color: #ff8400;}
+	.sap a:hover{font-weight: bold;}
+	.container-flex{
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+	.cal-mes{min-width: 200px;margin-top: 20px;}
+	.cal-dia{line-height:1.5;}
+	.obj-cat{margin-top: 20px;}
+	.monis img{height:180px;}
+	.kraal-moni{margin-top: 20px;text-align: center;}
+	.castors div.cal-dia{background-color:#f2e6ff;}.castors div.cal-dia:nth-child(2n){background-color:#e0c2ff;}
+	.llops div.cal-dia{background-color:#eaeaea;}.llops div.cal-dia:nth-child(2n){background-color:#c7c7c7;}
+	.rangers div.cal-dia{background-color:#cbe5fd;}.rangers div.cal-dia:nth-child(2n){background-color:#a6d4ff;}
+	.pioners div.cal-dia{background-color:#f9d4d4;}.pioners div.cal-dia:nth-child(2n){background-color:#ffaaaa;}
+	.rovers div.cal-dia{background-color:#e5e2d3;}.rovers div.cal-dia:nth-child(2n){background-color:#cec59c;}
