@@ -21,7 +21,7 @@ body{font-family: "Trebuchet MS", Verdana, sans-serif;}
 		#menu li.kraal.active{border-bottom: 3px solid #ff8400;}
 		.ico{display: block; margin:0 3px;
 			padding: 5px;
-			width:15vw; height:15vw;
+			width:9.5vw; height:9.5vw;
 			max-width:60px; max-height:60px;
 			border-radius:50%; cursor: pointer;}
 		.ico.agrupament{background-color: #91c378;}
