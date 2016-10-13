@@ -6,11 +6,20 @@
 body{font-family: "Trebuchet MS", Verdana, sans-serif;}
 
 /*HEADER*/
-	header{width: 100vw;}
+	header{	width: 100vw;}
+	.agrupament header{background: linear-gradient(rgba(64,125,34,0.35),rgba(255,255,255,1)), url(../media/gfx/cover.jpg); background-size: cover;	background-position: bottom;}
+	.castors header{background: linear-gradient(rgba(190,128,255,0.35),rgba(255,255,255,1)), url(../media/gfx/cover.jpg); background-size: cover; background-position: bottom;}
+	.llops header{background: linear-gradient(rgba(127,127,127,0.35),rgba(255,255,255,1)), url(../media/gfx/cover.jpg); background-size: cover; background-position: bottom;}
+	.rangers header{background: linear-gradient(rgba(0,133,255,0.35),rgba(255,255,255,1)), url(../media/gfx/cover.jpg); background-size: cover; background-position: bottom;}
+	.pioners header{background: linear-gradient(rgba(255,0,0,0.35),rgba(255,255,255,1)), url(../media/gfx/cover.jpg); background-size: cover; background-position: bottom;}
+	.rovers header{background: linear-gradient(rgba(127,118,77,0.35),rgba(255,255,255,1)), url(../media/gfx/cover.jpg); background-size: cover; background-position: bottom;}
+	.pares header{background: linear-gradient(rgba(129,0,137,0.35),rgba(255,255,255,1)), url(../media/gfx/cover.jpg); background-size: cover; background-position: bottom;}
+	.kraal header{background: linear-gradient(rgba(255,132,0,0.35),rgba(255,255,255,1)), url(../media/gfx/cover.jpg); background-size: cover; background-position: bottom;}
+
 	.header-gfx{display: block; margin:0 auto; padding:10px 0px 10px 0px;max-width: 90vw;}
 		/*--MENU--*/
 		#menu ul{text-align: center;}
-		#menu li{display: inline-block; padding-bottom:2px; padding-top:4px; border-bottom: 3px solid white;}
+		#menu li{display: inline-block; padding-bottom:2px; padding-top:4px; border-bottom: 3px solid rgba(0,0,0,0);}
 		#menu li.agrupament.active{border-bottom: 3px solid #46a138;}
 		#menu li.castors.active{border-bottom: 3px solid #be80ff;}
 		#menu li.llops.active{border-bottom: 3px solid #7F7F7F;}
@@ -62,6 +71,54 @@ body{font-family: "Trebuchet MS", Verdana, sans-serif;}
 	h2{border-bottom: 2px solid black; text-align: left;}
 	section p{padding-top: 10px;}
 	section ul{padding: 20px;}
+	#inscripcio{
+		text-decoration: none;
+		display: block;
+		margin: 10 auto;
+		padding: 10px;
+		background-color: #91c378;
+		color: black;
+	}#inscripcio:hover{background-color: #46a138; color:white;}
+	.miniatura{
+		cursor: pointer;
+		display: table;
+		margin:10px;
+		background-size: cover;
+		background-position: center;
+		width: 75vw; max-width: 220px;
+		height: 75vw; max-height: 220px;
+		position: relative;
+		border-radius: 15px;
+	}
+	.moreButt{
+		cursor: pointer;
+		display: table;
+		margin:10px;
+		padding: 10px;
+		width: 80%;
+		position: relative;
+		border-radius: 15px;
+	}
+	.castors div.moreButt{background-color: #f2e6ff;}.castors div.moreButt:hover{background-color: #e0c2ff;}
+	.llops div.moreButt{background-color: #eaeaea;}.llops div.moreButt:hover{background-color: #c7c7c7;}
+	.rangers div.moreButt{background-color: #cbe5fd;}.rangers div.moreButt:hover{background-color: #a6d4ff;}
+	.pioners div.moreButt{background-color: #f9d4d4;}.pioners div.moreButt:hover{background-color: #ffaaaa;}
+	.rovers div.moreButt{background-color: #e5e2d3;}.rovers div.moreButt:hover{background-color: #cec59c;}
+	.miniaturaText{
+		display: table-cell;
+		vertical-align: bottom;
+		position: absolute;
+		top:70%;
+		bottom:0px;
+		right:0px;
+		left:0px;
+		background-color: rgba(255,255,255,0.5); 
+		padding: 10px;
+	}
+	.miniatura:hover .miniaturaText{
+		font-weight: bold;
+		background-color: rgba(255,255,255,1); 
+	}
 	/*section.xarxes,section.kraal_monis,section.carrecs,section.banc,section.links,section.sap,*/
 	section.center{text-align: center;}
 	.agrupament h1,.agrupament h2,.agrupament h3{color: #46a138; border-color: #46a138;}
@@ -86,6 +143,11 @@ body{font-family: "Trebuchet MS", Verdana, sans-serif;}
 		display: flex;
 		justify-content: space-around;
 		flex-wrap: wrap;
+	}
+	.container-flex2{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
 	}
 	.cal-mes{min-width: 200px;margin-top: 20px;}
 	.cal-dia{line-height:1.5;}
