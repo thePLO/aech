@@ -8,6 +8,7 @@ body{font-family: "Trebuchet MS", Verdana, sans-serif;}
 /*HEADER*/
 	header{	width: 100vw;}
 	.agrupament header{background: linear-gradient(rgba(64,125,34,0.35),rgba(255,255,255,1)), url(../media/gfx/cover.jpg); background-size: cover;	background-position: bottom;}
+	#nadal{background: linear-gradient(rgba(0,35,255,0.35),rgba(255,255,255,1)), url(../media/gfx/cover.jpg); background-size: cover;	background-position: bottom;}
 	.castors header{background: linear-gradient(rgba(190,128,255,0.35),rgba(255,255,255,1)), url(../media/gfx/cover.jpg); background-size: cover; background-position: bottom;}
 	.llops header{background: linear-gradient(rgba(127,127,127,0.35),rgba(255,255,255,1)), url(../media/gfx/cover.jpg); background-size: cover; background-position: bottom;}
 	.rangers header{background: linear-gradient(rgba(0,133,255,0.35),rgba(255,255,255,1)), url(../media/gfx/cover.jpg); background-size: cover; background-position: bottom;}
