@@ -1,7 +1,9 @@
 *{box-sizing: border-box; margin:0; padding:0;}
 /*	--agrupament-c1: #d4eecf; --castors-c1: #f2e6ff; --llops-c1: #eaeaea; --rangers-c1: #cbe5fd; --pioners-c1: #f9d4d4; --rovers-c1: #e5e2d3; --pares-c1: #a14aa6; --kraal-c1: #d6d6d6;
 	--agrupament-c2: #91c378; --castors-c2: #e0c2ff; --llops-c2: #c7c7c7; --rangers-c2: #a6d4ff; --pioners-c2: #ffaaaa; --rovers-c2: #cec59c; --pares-c1: #84298a; --kraal-c2: #c7c7c7;
-	--agrupament-c3: #407D22; --castors-c3: #be80ff; --llops-c3: #7F7F7F; --rangers-c3: #0085ff; --pioners-c3: #ff0000; --rovers-c3: #7F764D; --pares-c1: #810089; --kraal-c3: #000000;*/
+	--agrupament-c3: #407D22; --castors-c3: #be80ff; --llops-c3: #7F7F7F; --rangers-c3: #0085ff; --pioners-c3: #ff0000; --rovers-c3: #7F764D; --pares-c1: #810089; --kraal-c3: #000000;
+
+	SAP: #F5C418*/
 
 body{font-family: "Trebuchet MS", Verdana, sans-serif;}
 
@@ -16,6 +18,7 @@ body{font-family: "Trebuchet MS", Verdana, sans-serif;}
 	.rovers header{background: linear-gradient(rgba(127,118,77,0.35),rgba(255,255,255,1)), url(../media/gfx/cover.jpg); background-size: cover; background-position: bottom;}
 	.pares header{background: linear-gradient(rgba(129,0,137,0.35),rgba(255,255,255,1)), url(../media/gfx/cover.jpg); background-size: cover; background-position: bottom;}
 	.kraal header{background: linear-gradient(rgba(255,132,0,0.35),rgba(255,255,255,1)), url(../media/gfx/cover.jpg); background-size: cover; background-position: bottom;}
+	.sap header{background: linear-gradient(rgba(245,196,24,0.35),rgba(75,75,75,1)), url(../media/gfx/cover.jpg); background-size: cover; background-position: bottom;}
 
 	.header-gfx{display: block; margin:0 auto; padding:10px 0px 10px 0px;max-width: 90vw;}
 		/*--MENU--*/
@@ -65,6 +68,8 @@ body{font-family: "Trebuchet MS", Verdana, sans-serif;}
 	.rovers footer{background-color: #cec59c; border-color: #7F764D;}
 	.pares footer{background-color: #84298a; border-color: #810089; color:white;}
 	.kraal footer{background-color: #ffaa4e; border-color: #ff8400;}
+	.sap footer{background-color: #4b4b4b; border-color: #F5C418; color: #F5C418;}
+	.sap footer a{color: #ffffff;}
 /*--SECCIONS--*/
 	/*avislegal*/textarea{margin-top: 20px}
 	section{padding: 20px 5vw;max-width:920px; margin: 0 auto;}
@@ -72,6 +77,7 @@ body{font-family: "Trebuchet MS", Verdana, sans-serif;}
 	h2{border-bottom: 2px solid black; text-align: left;}
 	section p{padding-top: 10px;}
 	section ul{padding: 20px;}
+	.novetats{text-align: 	center;}
 	#inscripcio{
 		text-decoration: none;
 		display: block;
@@ -85,9 +91,9 @@ body{font-family: "Trebuchet MS", Verdana, sans-serif;}
 		display: block;
 		margin: 10;
 		padding: 10px;
-		background-color: #ffaa4e;
+		background-color: #F5C418;
 		color: black;
-	}#sapBoto:hover{background-color: #ff8400; color:white;}
+	}#sapBoto:hover{background-color: #fff498; color:BLACK;}
 	.miniatura{
 		cursor: pointer;
 		display: table;
@@ -138,6 +144,7 @@ body{font-family: "Trebuchet MS", Verdana, sans-serif;}
 	.rovers h1,.rovers h2,.rovers h3{color: #7F764D; border-color: #7F764D;}
 	.pares h1,.pares h2,.pares h3{color: #810089; border-color: #810089;}
 	.kraal h1,.kraal h2,.kraal h3{color: #ff8400; border-color: #ff8400;}
+	.sap h1,.sap h2,.sap h3{color: #F5C418; border-color: #F5C418; background-color: #4b4b4b;}
 	section.xarxes div{max-width: 66vw; margin:0 auto;}
 	section.xarxes a{text-decoration: none; color: #91c378;} section.xarxes a:hover{color: #46a138;}
 	.banc span.ca{font-weight: bold; color: #be80ff;}
@@ -146,8 +153,8 @@ body{font-family: "Trebuchet MS", Verdana, sans-serif;}
 	.banc span.pi{font-weight: bold; color: #ff0000;}
 	.banc span.ro{font-weight: bold; color: #7F764D;}
 	.banc span.ge{font-weight: bold; color: #46a138;}
-	.sap a{text-decoration: underline; color: #ff8400;}
-	.sap a:hover{font-weight: bold;}
+	.sapSeccio a{text-decoration: underline; color: #ff8400;}
+	.sapSeccio a:hover{font-weight: bold;}
 	.container-flex{
 		display: flex;
 		justify-content: space-around;
