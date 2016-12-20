@@ -1,0 +1,14 @@
+#SAP {
+	left: 5vw;
+	margin-left: 0;
+	width: 126.7vh;
+	height: 90vh;
+	border: 1px solid #ff8400;
+}
+#sap_container {
+	width: 100vw;
+	padding: 0;
+	text-align: center;
+	margin: 0 auto;
+	background: #ffeac7;
+}
