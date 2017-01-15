@@ -40,7 +40,11 @@
 		</section>
 		<section class="calendari center">
 			<h2>Calendari</h2>
-			<div class="container-flex">
+				<ul>
+					<li class="ico2 rangers" id="b1" onclick="selectCal(1);">1</li>
+					<li class="ico2 rangers" id="b2" onclick="selectCal(2);">2</li>
+				</ul>
+			<div class="container-flex" id="cal1Trim">
 				<div class ="cal-mes"><h3>Octubre</h3>
 					<div class ="cal-dia"><strong>01</strong>-02<br>Activitat de matí</div>
 					<div class ="cal-dia"><strong>08</strong>-09<br>Activitat de matí</div>
@@ -63,6 +67,30 @@
 					<div class ="cal-dia"><strong>27-30</strong><br><a href='media/pdf/excNadal16.pdf'><i class='fa fa-file-pdf-o'></i></a> Excursió de Nadal</div>
 				</div>
 			</div>
+			<div class="container-flex" id="cal2Trim">
+				<div class ="cal-mes"><h3>Gener</h3>
+					<div class ="cal-dia"><strong>14</strong>-15<br>Activitat de matí</div>
+					<div class ="cal-dia"><strong>21</strong>-22<br>Activitat de matí</div>
+					<div class ="cal-dia"><strong>28</strong>-29<br>Activitat de matí</div>
+				</div>
+				<div class ="cal-mes"><h3>Febrer</h3>
+					<div class ="cal-dia"><strong>04</strong>-05<br>Excursió d'un dia</div>
+					<div class ="cal-dia"><strong>11</strong>-12<br>Activitat de matí</div>
+					<div class ="cal-dia"><strong>18</strong>-19<br>Activitat de matí</div>
+					<div class ="cal-dia"><strong>25</strong>-26<br>Lliure</div>
+				</div>
+				<div class ="cal-mes"><h3>Març</h3>
+					<div class ="cal-dia"><strong>04-05</strong><br>Excursió de dos dies</div>
+					<div class ="cal-dia"><strong>11</strong>-12<br>Activitat de matí</div>
+					<div class ="cal-dia"><strong>18</strong>-19<br>Activitat de matí</div>
+					<div class ="cal-dia"><strong>25</strong>-26<br>Lliure</div>
+				</div>
+				<div class ="cal-mes"><h3>Abril</h3>
+					<div class ="cal-dia"><strong>01</strong>-02<br>Excursió d'un dia</div>
+					<div class ="cal-dia"><strong>08-11</strong><br>Pasqua Rànger</div>
+				</div>
+			</div>
+			<script type="text/javascript">selectCal(2);</script>
 		</section>
 		<section>
 			<h2>Objectius del trimestre</h2>
