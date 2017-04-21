@@ -273,20 +273,33 @@ function getAllPhotos(){
 function selectCal(a){
 	var cal1 = document.querySelector("#cal1Trim");
 	var cal2 = document.querySelector("#cal2Trim");
+	var cal3 = document.querySelector("#cal3Trim");
 
 	var butCal1 = document.querySelector("#b1");
 	var butCal2 = document.querySelector("#b2");
+	var butCal3 = document.querySelector("#b3");
 
 	if(a == 1){
 		cal1.style.display = "flex";
 		cal2.style.display = "none";
+		cal3.style.display = "none";
 		butCal1.classList.add("active");
 		butCal2.classList.remove("active");
+		butCal3.classList.remove("active");
 	}else if(a == 2){
 		cal1.style.display = "none";
 		cal2.style.display = "flex";
+		cal3.style.display = "none";
 		butCal1.classList.remove("active");
 		butCal2.classList.add("active");
+		butCal3.classList.remove("active");
+	}else if(a == 3){
+		cal1.style.display = "none";
+		cal2.style.display = "none";
+		cal3.style.display = "flex";
+		butCal1.classList.remove("active");
+		butCal2.classList.remove("active");
+		butCal3.classList.add("active");
 	}
 
 }
