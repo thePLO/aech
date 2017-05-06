@@ -1,0 +1,44 @@
+<html lang="ca">
+	<head>
+		<title>Web útils</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+		<link rel="stylesheet" href="../media/fonts/font-awesome-4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="../css/style.css">
+		<link rel="icon" type="image/jpg" href="../media/gfx/ico0.png">
+		<script src="../js/script.js"></script>
+		<base target="_blank">
+		<script>
+			window.twttr = (function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0],
+				t = window.twttr || {};
+				if (d.getElementById(id)) return t;
+				js = d.createElement(s);
+				js.id = id;
+				js.src = "https://platform.twitter.com/widgets.js";
+				fjs.parentNode.insertBefore(js, fjs);
+				t._e = [];
+				t.ready = function(f) {
+					t._e.push(f);
+				};
+				return t;
+			}(document, "script", "twitter-wjs"));
+		</script>
+	</head>
+	<body class="kraal">
+		<header>
+			<div class="header-gfx">
+				<img src="../media/gfx/h_index.png" class="header-gfx">
+			</div>
+		</header>
+		<h1>Coses de la web</h1>
+		<section class="utils">
+			<h2>Útils</h2>
+			<ul>
+				<li><a href="album.html">Albums</a></li>
+				<li><a href="cal.html">Calendaris</a></li>
+				<li><a href="objectius.html">Objectius</a></li>
+			</ul>
+		</section>
+	</body>
+</html>

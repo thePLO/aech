@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../media/fonts/font-awesome-4.5.0/css/font-awesome.min.css">
+	<title>Objectius</title>
+	<link rel="icon" type="image/jpg" href="../media/gfx/ico0.png">
+</head>
+<body>
+	<style type="text/css">
+		textarea{
+			resize: none;
+			overflow: hidden;
+			width: 70vw;
+			height: 1em;
+			padding: .5em;
+		}
+		#snipet{
+			resize: none;
+			overflow: hidden;
+			width: 90vw;
+			height: 60vh;
+			display: block;
+			margin: 0 auto;
+		}
+		#container{
+			margin: 0 auto;
+			width: 70vw;
+		}
+		.container-flex{
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+		}
+		.control{
+			text-align: center;
+			display: block;
+			margin: 0 auto;
+		}
+		.centered{
+			text-align: center;
+		}
+	</style>
+	<script type="text/javascript">
+	    Object.size = function(obj) {
+	    	var size = 0, key;
+		    for (key in obj) {
+		        if (obj.hasOwnProperty(key)) size++;
+		    }
+		    return size;
+		};
+
+		function copyToClipboard() {
+			window.prompt("Copia i enviam-ho a web@aech.cat\nCtrl+C, Enter", document.getElementById('snipet').value);
+		}		
+
+		function gup( name )
+		{
+		  name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+		  var regexS = "[\\?&]"+name+"=([^&#]*)";
+		  var regex = new RegExp( regexS );
+		  var results = regex.exec( window.location.href );
+		  if( results == null )
+		    return "";
+		  else
+		    return results[1];
+		}
+
+		function LoadPreset(){ }
+		LoadPreset();
+
+		function updateCode(){
+			var t = document.getElementById('snipet');
+			var trim = document.getElementById('trimestre').value;
+			var branca = document.getElementById('branca').value;
+			var obj1 = [
+				document.getElementById('obj1_1'),
+				document.getElementById('obj1_2'),
+				document.getElementById('obj1_3'),
+				document.getElementById('obj1_4')
+			];
+			var obj2 = [
+				document.getElementById('obj2_1'),
+				document.getElementById('obj2_2'),
+				document.getElementById('obj2_3'),
+				document.getElementById('obj2_4')
+			];
+			var obj3 = [
+				document.getElementById('obj3_1'),
+				document.getElementById('obj3_2'),
+				document.getElementById('obj3_3'),
+				document.getElementById('obj3_4')
+			];
+			t.value = "<!-- " + branca + " tr:"+ trim +" -->\n";
+			t.value += "<div class ='obj-cat'>\n	<h3>Escoltisme</h3>\n	<ul>\n";
+			for (var i = 0; i < obj1.length; i++) {
+				if(obj1[i].value != "") t.value += "		<li>"+obj1[i].value+"</li>\n";
+			}
+			t.value += "	</ul>\n</div>\n<div class ='obj-cat'>\n	<h3>Natura</h3>\n	<ul>\n";
+			for (var i = 0; i < obj2.length; i++) {
+				if(obj2[i].value != "") t.value += "		<li>"+obj2[i].value+"</li>\n";
+			}
+			t.value += "	</ul>\n</div>\n<div class ='obj-cat'>\n	<h3>Fe</h3>\n	<ul>\n";
+			for (var i = 0; i < obj3.length; i++) {
+				if(obj3[i].value != "") t.value += "		<li>"+obj3[i].value+"</li>\n";
+			}
+			t.value += "	</ul>\n</div>";
+
+		}
+	</script>
+	<select name="trimestre" id="trimestre" onchange="updateCode()">
+	  <option value="1">1er Trimestre</option>
+	  <option value="2">2on Trimestre</option>
+	  <option value="3">3er Trimestre</option>
+	</select>
+	<select name="branca" id="branca" onchange = "updateCode();">
+	  <option value="castors">C/LL</option>
+	  <option value="llops">LL/D</option>
+	  <option value="rangers">R/G</option>
+	  <option value="pios">P/C</option>
+	  <option value="rovers">R</option>
+	</select>
+	<hr>
+	<div class="centered">
+		Escoltisme<br>
+		<textarea id="obj1_1" onkeyup = "updateCode();" onblur = "updateCode();"></textarea><br>
+		<textarea id="obj1_2" onkeyup = "updateCode();" onblur = "updateCode();"></textarea><br>
+		<textarea id="obj1_3" onkeyup = "updateCode();" onblur = "updateCode();"></textarea><br>
+		<textarea id="obj1_4" onkeyup = "updateCode();" onblur = "updateCode();"></textarea><br>
+		Natura<br>
+		<textarea id="obj2_1" onkeyup = "updateCode();" onblur = "updateCode();"></textarea><br>
+		<textarea id="obj2_2" onkeyup = "updateCode();" onblur = "updateCode();"></textarea><br>
+		<textarea id="obj2_3" onkeyup = "updateCode();" onblur = "updateCode();"></textarea><br>
+		<textarea id="obj2_4" onkeyup = "updateCode();" onblur = "updateCode();"></textarea><br>
+		Fe<br>
+		<textarea id="obj3_1" onkeyup = "updateCode();" onblur = "updateCode();"></textarea><br>
+		<textarea id="obj3_2" onkeyup = "updateCode();" onblur = "updateCode();"></textarea><br>
+		<textarea id="obj3_3" onkeyup = "updateCode();" onblur = "updateCode();"></textarea><br>
+		<textarea id="obj3_4" onkeyup = "updateCode();" onblur = "updateCode();"></textarea>
+	</div>	
+	<hr>
+	<div width="100%" class="control">
+			<button onclick="updateCode()"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+			<button onclick="copyToClipboard()">Envia</button>
+	</div>
+	<hr>
+	<div width="100%"><textarea id="snipet"  readonly>..placeholder..</textarea></div>	
+	<script type="text/javascript">updateCode();</script>
+</body>
+</html>

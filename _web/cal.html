@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../media/fonts/font-awesome-4.5.0/css/font-awesome.min.css">
+	<title>Calendari</title>
+	<link rel="icon" type="image/jpg" href="../media/gfx/ico0.png">
+</head>
+<body>
+	<style type="text/css">
+		/*div {
+			border: 1px dotted black;
+		}*/
+		#mes{
+			width: 200px;
+		}
+		#inputText{
+			text-align-last: center;
+			resize: none;
+			overflow: hidden;
+			height: 1em;
+		}
+		#title {
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+			color: white;
+			background-color: black;
+			border: 2px solid white;
+		}
+		#dia{
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+		}
+		#snipet{
+			resize: none;
+			overflow: hidden;
+			width: 90vw;
+			height: 30vh;
+			display: block;
+			margin: 0 auto;
+		}
+		#container{
+			margin: 0 auto;
+			width: 70vw;
+			padding: 5px;
+		}
+		.container-flex{
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+		.control{
+			text-align: center;
+			display: block;
+			margin: 0 auto;
+		}
+		.centered{
+			text-align: center;
+		}
+	</style>
+	<script type="text/javascript">
+
+	    var cal = new Object();
+	    var calDOM = new Object();
+
+	    Object.size = function(obj) {
+	    	var size = 0, key;
+		    for (key in obj) {
+		        if (obj.hasOwnProperty(key)) size++;
+		    }
+		    return size;
+		};
+
+		function CreateHeader(m, d){
+			var titleMes = document.createElement('div');
+		    titleMes.id = "title";
+		    
+		    titleMes.innerHTML = m + " <button onclick='addDay(\""+m+"\")'><i class='fa fa-plus' aria-hidden='true'></i></button> <button onclick='deleteMonth(\""+m+"\")'><i class='fa fa-times' aria-hidden='true'></i></button>";
+		    /*var title = document.createElement('span');
+		    title.innerHTML = m;
+		    titleMes.appendChild(title);*/
+	    	
+	    	d.appendChild(titleMes);
+		}
+
+	    function addMonth(m){
+	    	var strMonth = m || document.getElementById('months').value;
+	    	if(cal[strMonth] == null){
+	    		cal[strMonth] = [];
+	    		calDOM[strMonth] = document.createElement('div');
+				calDOM[strMonth].id = "mes";
+	    		CreateHeader(strMonth, calDOM[strMonth]);
+
+	    		var container = document.getElementById('container');
+	    		container.appendChild(calDOM[strMonth]);
+
+		    	updateCode();
+	    	}
+	    }
+	    function deleteMonth(m){
+	    	var strMonth = m || document.getElementById('months').value;
+	    	if(cal[strMonth] != null){
+	    		delete cal[strMonth];
+	    		var container = document.getElementById('container');
+	    		container.removeChild(calDOM[strMonth]);
+
+		    	updateCode();
+	    	}
+	    }
+		
+		function addDay(m){
+	    	var strMonth = m || document.getElementById('months').value;
+			if(cal[strMonth] != null){
+				var id = Object.size(cal[strMonth]);
+		    	cal[strMonth][id] = {
+		    		day: "00-00",
+		    		content:"placeholder",
+		    		div: document.createElement('div'),
+		    		fillDiv: function() {
+		    			this.div.innerHTML = null;
+		    			var dayT = document.createElement('textarea');
+		    			dayT.value = this.day;
+		    			var activityT = document.createElement('textarea');
+		    			activityT.value = this.content;
+		    			dayT.onkeyup = updateDays;
+		    			dayT.onblur = updateDays;
+		    			dayT.id = "inputText";
+		    			dayT.maxlength = 50;
+		    			activityT.onkeyup = updateDays;
+		    			activityT.onblur = updateDays;
+		    			activityT.id = "inputText";
+		    			this.div.id = "dia";
+		    			this.div.appendChild(dayT);
+		    			this.div.appendChild(activityT);
+		    		}
+		    	};
+		    	cal[strMonth][id].fillDiv();
+		    	calDOM[strMonth].appendChild(cal[strMonth][id].div);
+
+		    	updateCode();
+		    }else{
+		    	console.log("no place found to attach");	
+		    }
+	    }
+
+	    function copyToClipboard() {
+			window.prompt("Copia i enviam-ho a web@aech.cat\nCtrl+C, Enter", document.getElementById('snipet').value);
+		}		
+
+		function updateDays() {
+			for (var k in cal){
+				if (cal.hasOwnProperty(k)) {
+					for (var i = 0; i < Object.size(cal[k]); i++) {
+						cal[k][i].day = cal[k][i].div.children[0].value;
+						cal[k][i].content = cal[k][i].div.children[1].value;
+					}
+				}
+			}
+
+			updateCode();
+			console.log(cal);
+		}
+
+		var mVal = {
+			Gener: 1,
+			Febrer:2,
+			Març:3,
+			Abril:4,
+			Maig:5,
+			Juny:6,
+			Juliol:7,
+			Agost:8,
+			Setembre:9,
+			Octubre:10,
+			Novembre:11,
+			Desembre:12,
+		};
+
+		function gup( name )
+		{
+		  name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+		  var regexS = "[\\?&]"+name+"=([^&#]*)";
+		  var regex = new RegExp( regexS );
+		  var results = regex.exec( window.location.href );
+		  if( results == null )
+		    return "";
+		  else
+		    return results[1];
+		}
+
+		function LoadPreset(){
+			var monthsPreset = [];
+			monthsPreset[0] = gup('m0')||0; monthsPreset[1] = gup('m1')||0;
+			monthsPreset[2] = gup('m2')||0; monthsPreset[3] = gup('m3')||0;
+			monthsPreset[4] = gup('m4')||0; monthsPreset[5] = gup('m5')||0;
+			monthsPreset[6] = gup('m6')||0; monthsPreset[7] = gup('m7')||0;
+			monthsPreset[8] = gup('m8')||0; monthsPreset[9] = gup('m9')||0;
+			monthsPreset[10] = gup('m10')||0;monthsPreset[11] = gup('m11')||0;
+			console.log(monthsPreset);
+		}
+		LoadPreset();
+
+		function updateCode(){
+			var t = document.getElementById('snipet');
+			var trim = document.getElementById('trimestre').value;
+			var branca = document.getElementById('branca').value;
+			
+			t.value = "<!--" + branca + "-->";
+			t.value += "\n<div class=\"container-flex\" id=\"cal" + trim + "Trim\">";
+			
+			for (var k in cal){
+				if (cal.hasOwnProperty(k)) {
+					t.value += "\n	<div class =\"cal-mes\"><h3>" + k + "</h3>";
+
+					for (var i = 0; i < Object.size(cal[k]); i++) {
+						t.value += "\n		<div class =\"cal-dia\">" + cal[k][i].day + "<br>" + cal[k][i].content + "</div>";
+					}
+					t.value += "\n	</div>";
+				}
+			}
+			t.value += "\n</div>";
+
+		}
+	</script>
+	<select name="trimestre" id="trimestre" onchange="updateCode()">
+		<option value="1">1er Trimestre</option>
+		<option value="2">2on Trimestre</option>
+		<option value="3">3er Trimestre</option>
+	</select>
+	<select name="branca" id="branca" onchange="updateCode()">
+		<option value="castors">C/LL</option>
+		<option value="llops">LL/D</option>
+		<option value="rangers">R/G</option>
+		<option value="pios">P/C</option>
+		<option value="rovers">R</option>
+	</select>
+	<hr>
+	<div class="centered">
+		<select name="months" id="months">
+			<option value="Gener">Gener</option>
+			<option value="Febrer">Febrer</option>
+			<option value="Març">Març</option>
+			<option value="Abril">Abril</option>
+			<option value="Maig">Maig</option>
+			<option value="Juny">Juny</option>
+			<option value="Juliol">Juliol</option>
+			<option value="Agost">Agost</option>
+			<option value="Setembre">Setembre</option>
+			<option value="Octubre">Octubre</option>
+			<option value="Novembre">Novembre</option>
+			<option value="Desembre">Desembre</option>
+		</select>
+		<button onclick="addMonth()"><i class="fa fa-plus" aria-hidden="true"></i></button>
+	</div>
+	<hr>
+	<div id = "container" class="container-flex"></div>
+	<hr>
+	<div width="100%" class="control">
+			<button onclick="updateCode()"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+			<button onclick="copyToClipboard()">Envia</button>
+	</div>
+	<hr>
+	<div width="100%"><textarea id="snipet"  readonly>..placeholder..</textarea></div>
+	<script type="text/javascript">updateCode();</script>
+</body>
+</html>
