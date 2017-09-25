@@ -5,8 +5,9 @@
 	<link rel="stylesheet" href="../media/fonts/font-awesome-4.5.0/css/font-awesome.min.css">
 	<title>Calendari</title>
 	<link rel="icon" type="image/jpg" href="../media/gfx/ico0.png">
+	
 </head>
-<body>
+<body class="llops" id="body">
 	<style type="text/css">
 		/*div {
 			border: 1px dotted black;
@@ -37,7 +38,7 @@
 			resize: none;
 			overflow: hidden;
 			width: 90vw;
-			height: 30vh;
+			height: 10vh;
 			display: block;
 			margin: 0 auto;
 		}
@@ -59,7 +60,49 @@
 		.centered{
 			text-align: center;
 		}
-	</style>
+		section.center{text-align: center;}
+		body{font-family: "Trebuchet MS", Verdana, sans-serif;}
+		.calendari li{display: inline-block; padding-bottom:2px; padding-top:4px;}
+		.agrupament h1,.agrupament h2,.agrupament h3{color: #46a138; border-color: #46a138;}
+		.castors h1,.castors h2,.castors h3{color: #be80ff; border-color: #be80ff;}
+		.llops h1,.llops h2,.llops h3{color: #7F7F7F; border-color: #7F7F7F;}
+		.rangers h1,.rangers h2,.rangers h3{color: #0085ff; border-color: #0085ff;}
+		.pioners h1,.pioners h2,.pioners h3{color: #ff0000; border-color: #ff0000;}
+		.rovers h1,.rovers h2,.rovers h3{color: #7F764D; border-color: #7F764D;}
+		.pares h1,.pares h2,.pares h3{color: #810089; border-color: #810089;}
+		.kraal h1,.kraal h2,.kraal h3{color: #ff8400; border-color: #ff8400;}
+		.sap h1,.sap h2,.sap h3{color: #F5C418; border-color: #F5C418; background-color: #4b4b4b;}
+		section.xarxes div{max-width: 66vw; margin:0 auto;}
+		section.xarxes a{text-decoration: none; color: #91c378;} section.xarxes a:hover{color: #46a138;}
+		.banc span.ca{font-weight: bold; color: #be80ff;}
+		.banc span.ll{font-weight: bold; color: #7F7F7F;}
+		.banc span.ra{font-weight: bold; color: #0085ff;}
+		.banc span.pi{font-weight: bold; color: #ff0000;}
+		.banc span.ro{font-weight: bold; color: #7F764D;}
+		.banc span.ge{font-weight: bold; color: #46a138;}
+		.sapSeccio a{text-decoration: underline; color: #ff8400;}
+		.sapSeccio a:hover{font-weight: bold;}
+		.container-flex{
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+		}
+		.container-flex2{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		.cal-mes{min-width: 200px;margin-top: 20px;}
+		.cal-dia{line-height:1.5;}
+		.obj-cat{margin-top: 20px;}
+		.monis img{height:180px;}
+		.kraal-moni{margin-top: 20px;text-align: center;}
+		.castors div.cal-dia{background-color:#f2e6ff;}.castors div.cal-dia:nth-child(2n){background-color:#e0c2ff;}
+		.llops div.cal-dia{background-color:#eaeaea;}.llops div.cal-dia:nth-child(2n){background-color:#c7c7c7;}
+		.rangers div.cal-dia{background-color:#cbe5fd;}.rangers div.cal-dia:nth-child(2n){background-color:#a6d4ff;}
+		.pioners div.cal-dia{background-color:#f9d4d4;}.pioners div.cal-dia:nth-child(2n){background-color:#ffaaaa;}
+		.rovers div.cal-dia{background-color:#e5e2d3;}.rovers div.cal-dia:nth-child(2n){background-color:#cec59c;}
+		</style>
 	<script type="text/javascript">
 
 	    var cal = new Object();
@@ -203,25 +246,39 @@
 		LoadPreset();
 
 		function updateCode(){
+			
+			var stringHTML = "";
 			var t = document.getElementById('snipet');
 			var trim = document.getElementById('trimestre').value;
 			var branca = document.getElementById('branca').value;
 			
+			var body = document.getElementById("body");
+			console.log(body);
+			body.className = branca;
+
 			t.value = "<!--" + branca + "-->";
+			stringHTML = "<!--" + branca + "-->";
 			t.value += "\n<div class=\"container-flex\" id=\"cal" + trim + "Trim\">";
+			stringHTML += "\n<div class=\"container-flex\" id=\"cal" + trim + "Trim\">";
 			
 			for (var k in cal){
 				if (cal.hasOwnProperty(k)) {
 					t.value += "\n	<div class =\"cal-mes\"><h3>" + k + "</h3>";
+					stringHTML += "\n	<div class =\"cal-mes\"><h3>" + k + "</h3>";
 
 					for (var i = 0; i < Object.size(cal[k]); i++) {
 						t.value += "\n		<div class =\"cal-dia\">" + cal[k][i].day + "<br>" + cal[k][i].content + "</div>";
+						stringHTML += "\n		<div class =\"cal-dia\">" + cal[k][i].day + "<br>" + cal[k][i].content + "</div>";
 					}
 					t.value += "\n	</div>";
+					stringHTML += "\n	</div>";
 				}
 			}
 			t.value += "\n</div>";
+			stringHTML += "\n</div>";
 
+			var preview = document.getElementById('preview');
+			preview.innerHTML = stringHTML;
 		}
 	</script>
 	<select name="trimestre" id="trimestre" onchange="updateCode()">
@@ -233,7 +290,7 @@
 		<option value="castors">C/LL</option>
 		<option value="llops">LL/D</option>
 		<option value="rangers">R/G</option>
-		<option value="pios">P/C</option>
+		<option value="pioners">P/C</option>
 		<option value="rovers">R</option>
 	</select>
 	<hr>
@@ -263,6 +320,7 @@
 	</div>
 	<hr>
 	<div width="100%"><textarea id="snipet"  readonly>..placeholder..</textarea></div>
+	<section class="calendari center" id = "preview"></section>
 	<script type="text/javascript">updateCode();</script>
 </body>
 </html>
