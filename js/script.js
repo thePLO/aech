@@ -179,6 +179,7 @@ var ranP = [
 ];
    
 var pioP = [
+    {l:"https://youtu.be/CBnLoakMgmI", d:"07/2018", t:"Ruta Granada", m:"https://lh3.googleusercontent.com/iCNLs7IT9ZPnIUJS9sQy0ccsynwAeU3vvs5zrWi4khPgrxjmHo5mOrC_ZLzL8Bts-zHkZlvU32lzu6ZtqMl939_bgWaGQtq7eB_30Shf6bLjVuvajNYYpq1K84AdsMpIGZXl7Ufv_a4C6GMRa9Qdg2y9l02wwzHygt2OGw4rFEEzgYAhhICTvaCjBjaYqu1eBq0KktVmXLjZT5GIS2nHK-kKUr7M1zmZ6AY4Zmn-HZ1aZBUJPyk7cGU6c-SkN8hUeRW-3qsCZ48Tljiv0_m0YVOZuAC1qpJIjOOnw7kjxT9jZpiIHS7ERQFaXwhACg0fKDDDyplbXi7NP9JEc4ZN7i0WjECbM2t_t6wjdGLeBWBv3v2nJn9T3YveC3tfsd51tZ8dPuXrB_aGprso3izB0lycpOGoAGk57Alv41ul_jqm_9qI8y9C4OkgwXghWgXGDkYXdWuaM4DFRWlMP6AieuV5n5p8_rJkmkAzPsJRUF_XXbMD9HywFOGZQFzSh598KPumXlUjlyUnx428xo55jGMuHPgXxfkDRvrRQaG_LRrMNnbhUwwGOnWko-RxTvuitRJb77aDYV5cIdbCCONNay40ZlNxcCU4uFED37PTTJ77vbaKA_F_8sRG6Zh4CY0=w1292-h969-no"},
 	{l:"https://photos.app.goo.gl/4SZPgpUybUEkarDv9", d:"05/2018", t:"Especialitats Mariona, Carme i Sara", m:"https://lh3.googleusercontent.com/Pw6uBlNicTpqXbO5UXgEAJCgFP3IlOoQ42PN_sMJNHKb5L-87asahu3G-qIANQRdAJ9Lm2KkODpQdGhNKmOSVShmk9JoO42Kxe6ZGWp43yXXX7JFmvjQOnPP_9I8ESq_vIlQcbFeZkyP8MOv6WyW5n5fVt3HXlp2z4_UhJkp862yu_fMIUO82ZJlPUG6DH9Y4zRwTddj4r_bA68G2mVn8kUvOvxg-7ZtkbN1c9IV2A9xsTMWpvTNJjTNuFOK0TcpfAaDGRO2Zc9WXf-8xDOW4lUj47ZaWYRp8pJG3yz-G0ZS7Z8K-ir2wNQLPzcBrvrFkuMwtdGuOn2WBV1PA2VRDl-ph2q1ZSd6t_llLuVI8CsE3hJ_UWXeHC58ioWXJ8khyuLzsV66XGHi9_FFKDbtbq2726QjBwi8Zd-N8J4CqJh0wDPosLxBo8b-6LrqdD4TVP3YuRE3ywaS1Qk8QAE1kJxeQeXBzqAhbUsc4wtxAvoK2ECkPqwni73j4tkClXK1TLyomhG-XemVOZSU4v-tMZ02gmIBhypRoK5IsoR7_jKcxzMLw43aUDFFt8kqYmjAcc37z3a1jkcyHDZNatmLdGTP8RyhIWdSqrkq-u1-k5mxV3qrmlyDstaw6NQYQ0iCmUSHp4KWNptKNCLUJ7J7I6_4fdf66VYz=w960-h720-no"},
     {l:"https://photos.app.goo.gl/yeMbLQvFdR91AsVx8", d:"04/2018", t:"Pasqua Ruta", m:"https://lh3.googleusercontent.com/w2CDY-1FqsWodqDyIpuKcUmvfg4ld9C-FvT9l5avik4KyFcpuqYcbTM_Ztvh6WU5WhUj4xGnrXwgfXKmbfIh24pF30N6rBwnpSnLzix1Jb28nAYufIvUoSFweySYM8bzAeV2GrpZbeA1f3VaF32y5AtOW-dK-NLo3tyajNiOzEnANl1SAMJByk2R4yeGVfF4eiw7uuDm4mY5UsiWb_wn-li5miNfLGIYmfwdSJT8JLZPib0nk1z62LZK5NYyXOec6SkTepnKsj4ma-J3wYkIJkGHh5x46Jmz3xZVr-U60rtyhaHSlmpVxdo6P2yuxxFV02Nz37NdvGZEFt0OYIkmbSKG8NdFFTNbvo6c9soFAOp7whyX8Kc2cJv0w9hmyHTAkUawjdgX3RUjJJn7YE6Y042u6Y2VwMyhTRA7q_3N3PZUSvqmHTfVe4x7sgbcnMW7_gcFoIutMHiJk-EpqFz379uQ-dBpItgKxxoB7uzGLf3R_fOJ3GFbHkQPUdI2Cfoto2TN_4WbrOnQEfEpsW9KEbFkB8DpYQG8vi1aXf3P1WVje9naD-kLpFiA-G6BXsrvu18DR6y_wOE2bWP-SL1I4Qd8aVbnHeFzdbl83QQGdyTT6iPXWcjL7ooJS6WbFYTStKkNqZ3abD89fsYU1XHn-7evKXPwdeqQ=w1200-h900-no"},
     {l:"https://photos.app.goo.gl/juEFK8oauJ7osJF72 ", d:"02/2018", t:"Bubble football", m:"https://lh3.googleusercontent.com/C26qScoiJD5wT4QKOERIcauh2Qde16KiSm0ENcvyX46184XFi0E5Hr0J6JMevoylK2QbOIdF1_p43B7HNtrOOU8kfodPhN0VxT_G-XQ63rXe_WLC0kbjCuDUI9CrKdpsAubGvkEOOwPgxyHkbHwmlevQU9EfWL-aANBucIa_fHP8685X-w0gJve9GdVxV1HLf0EvLQ4FkcO93JDC_FJMeTzVHLbOKQ9cwGRtbLuEfS7C85vnoC8ysTf824_YP5GxEVKSRWEEVBopDMDLx9ZYeo32mhY1Fml5FuqOSb7VcSZ6UQlN9FDYAY3jUZuEPrZz_DObCfw2PaEGvY2xs9FvBaaEcb5_n_uPQ23774IOBjkNQBINaPexBQyXnK9nbgr7gBeDvCObeO8eFgObGMkvcIcJp9hwNKgGxKeS4cehty2rcTSRnY1-zCEjlAzdZ0CCfG1k9q5eBq_kbfoROA95m2D5jfaF8F1WS1QCfsp_gtkW0q4laPhxue68g8BdKKNcAiVX_Htdp9EfP9uCbzuRdrMcdrMoICbwYC8tEF2M_AHcra6NWBwSwPhNwOnu07G3L5YnRAaPmqDbwqL4woOuqSJ6D08RDxes3Kl9JE3iC16zrLeyj44TAhb6UVS0tVyHQHUz0mONr8_YXWvy1l2J3KimjT9Ysubg=w958-h639-no"},
@@ -225,6 +226,7 @@ var pioP = [
 	{l:"https://goo.gl/photos/oBbpZ7sF66WJJu6BA", d:"11/2012", t:"Excursió 2 dies", m:"https://lh3.googleusercontent.com/v0fy-OpqNULLdVWt6tKrXa6NzO3DV2_AnBGQd8fVg0CptrmpC2TNmYcuC5jTJR9txSaM7G1q6OFgL8p5A2K5ZbjFgltldVzWlPbEn65R6AjnS29mvs_UgMD0fCkXNZt3dE5ZqpiBM5KPV5kkpzB5by3InJZpdbIvaa2_ZtFs7wO7PIkWOZ9-lGtIUDXqw28KycuGhO1yMR6UaSzE1ZFYR-XLWfdbI2tGermb37GjqBIsmmaUTuflTBYAw4wSlFhBQBQ3ueGqpC5e7G3ZWbFd96xmmyzpD9OQ13NO3B_zTFXF1pb9ZxUmlF3GwxlrvO9aLIFWnvd6pXfvwQmHfwd-1a1N_6rumgiaacXTqff3iM9DRU4BKF6JycaM1nE971KccPLBrIHhEFs__uMpBAekM9ovpEnS80o9mxYJEjxPj-J5geYax015myB1erggCyk_O-TZ-NuezjJSpRMGZG1_8Ykj-xzcrwV4tGBfd5-k4DTHPuXuwwDNCGCzbgHzYNy4FQeSXG2H5UPFp5HMyTSy-rMBopDklpbzqed_A0JIgX6WHkF2FWZQrOUDCmfay8AAeFIyCiwMznYZ-9IKruhCs3C015srIIp8RW3soTdnMThj0ds=w956-h717-no"},
 ];
 var rovP = [
+    {l:"https://www.youtube.com/watch?v=U8Y-VQGH0IQ", d:"07/2018", t:"EuskoRuta 18", m:"https://lh3.googleusercontent.com/bmfQ8Rb6Ry03o6A3CQw0m-jxifTTUGPwZrgzvcfzrVzQ_sDAU5iU5EO0o22dNGa-btpagMISrrTrkwhPymiwHYZU0k2Esc48ZpodEGZySKty0qHi24RrnZ-bG4MH6E9-l8cke4PlijsjOBHmU41d_a3AJRLMi_Q4LCSojgY4Qhl97UeHE7T0Gyj8uUuEkiEkOaxxzNmKuQlbbcF0OofaETUfcK9V8EQf563POz_hJSG8wi_aFoUh9WzlAfx38VatzgWCSkUvdjE8MHYzOoE7OjsDdkPBkkOddD_I4p42AQ3QhVwiv5T4lvjNEhilp8bi2TjNoiYX0JYO-kWmKgZpS99SKhJtH315c6aZkQgsrMA6oPqZq0-cpUZKjIY_DixPZIEhD_dX7D0JqOJY1SqZBzW71teW26rtbO0mbiLNBTYZKtQheKfnddPEKXh278Pss4Jc9qsjrqlnjQvxr9TnbQS027wmulQz9VfJlnN2MHA8cj0wGt9pFMaLLMrj1nxpryzIPNvSl3tjWPKW4kvH148wyqD1zDDeC-0ptUAgTu36NZvpHhRNZSp68T7TthNLJnQJCUmoRLuZIWCFdPGI_x5xwJ6xqnvZqy3vCDR2GT6_x3JuzkTLBs0q0fJtF7SMFJOfu2uT7PX1pREawUKZwDkMOWXxGFAvLJWYGnsg0-17fXWcTw5NAxhD=w1227-h921-no"},
 	{l:"https://photos.app.goo.gl/WAhkQlbqmXIyHqo32", d:"11/2017", t:"Excursió en bici", m:"https://lh3.googleusercontent.com/ea5n0aoHdgyR4jREzDjpaZCOPQLIobF090ADVALn5VA-U_aUwfcRdsO6AyDvg4dpGfLiDl88_m_2LBN2zin1rRO9LLrno_31-xv3XehQ8-GlNA2ppAUQ1Y80w6Sf1SQq852n51nO6ZPh6dc_jpx-bsZwdFlQd3qSPLsj5Oq4Nrao95OAqnodeH9U7UwDDL5bPsOAULqFCTjU3x-NQDKWUyiGJjyS1MH1tycwft_AiLuv2imV91UIisNcuegMa_i9YJ61qr5MVf5EykxD_8LMNx-t4Q2DAN0XSvulj5PZQUstS4YpqV7EeJl26CIVcoezkVMmrghw3Rsn4sc8EyT69GSRVvUUDBc-DZ09_pPDIiiLKpj8lFjqUGtq-WWhLGKeXYc10zxsLMDKv8GIVZ8cY-41LgCGISU_eDUKg5bmZ0UUhTscB7-HmmCdBt-rt5jNilYftxIUdlYQQuX6IrwA5zjzJuCa8jKArEhB_HWaabtuFRGOI7SOfzxdpEkVdngR5EDI0ds39eEAkdECTk6Iv3xaw-hYygjwLx8rP7A0-7a1MKeJnyGToxh6ZZ-lZ70-K9OfqeRdmO4iceqjUdWMHffbt5G7zil2K62gLtRnRw=w1274-h956-no"},
 	{l:"https://photos.app.goo.gl/w4SsWXG5uVMko58C3", d:"07/2017", t:"Video Ruta 17", m:"media/gfx/cover.jpg"},
 	/*{l:"", d:"", t:"", m:"media/gfx/cover.jpg"},
@@ -319,27 +321,96 @@ function selectCal(a){
 	var butCal2 = document.querySelector("#b2");
 	var butCal3 = document.querySelector("#b3");
 
-	if(a == 1){
-		cal1.style.display = "flex";
-		cal2.style.display = "none";
-		cal3.style.display = "none";
-		butCal1.classList.add("active");
-		butCal2.classList.remove("active");
-		butCal3.classList.remove("active");
-	}else if(a == 2){
-		cal1.style.display = "none";
-		cal2.style.display = "flex";
-		cal3.style.display = "none";
-		butCal1.classList.remove("active");
-		butCal2.classList.add("active");
-		butCal3.classList.remove("active");
-	}else if(a == 3){
-		cal1.style.display = "none";
-		cal2.style.display = "none";
-		cal3.style.display = "flex";
-		butCal1.classList.remove("active");
-		butCal2.classList.remove("active");
-		butCal3.classList.add("active");
-	}
+    if(a>3){
+        var cal1_2 = document.querySelector("#cal1Trim2");
+        var cal2_2 = document.querySelector("#cal2Trim2");
+        var cal3_2 = document.querySelector("#cal3Trim2");
+
+        var butCal1_2 = document.querySelector("#b1_2");
+        var butCal2_2 = document.querySelector("#b2_2");
+        var butCal3_2 = document.querySelector("#b3_2");
+
+        if(a-3 == 1){
+            cal1_2.style.display = "flex";
+            cal2_2.style.display = "none";
+            cal3_2.style.display = "none";
+            butCal1_2.classList.add("active");
+            butCal2_2.classList.remove("active");
+            butCal3_2.classList.remove("active");
+        }else if(a-3 == 2){
+            cal1_2.style.display = "none";
+            cal2_2.style.display = "flex";
+            cal3_2.style.display = "none";
+            butCal1_2.classList.remove("active");
+            butCal2_2.classList.add("active");
+            butCal3_2.classList.remove("active");
+        }else if(a-3 == 3){
+            cal1_2.style.display = "none";
+            cal2_2.style.display = "none";
+            cal3_2.style.display = "flex";
+            butCal1_2.classList.remove("active");
+            butCal2_2.classList.remove("active");
+            butCal3_2.classList.add("active");
+        }
+    }
+    else {
+        if(a == 1){
+        cal1.style.display = "flex";
+            cal2.style.display = "none";
+            cal3.style.display = "none";
+            butCal1.classList.add("active");
+            butCal2.classList.remove("active");
+            butCal3.classList.remove("active");
+        }else if(a == 2){
+            cal1.style.display = "none";
+            cal2.style.display = "flex";
+            cal3.style.display = "none";
+            butCal1.classList.remove("active");
+            butCal2.classList.add("active");
+            butCal3.classList.remove("active");
+        }else if(a == 3){
+            cal1.style.display = "none";
+            cal2.style.display = "none";
+            cal3.style.display = "flex";
+            butCal1.classList.remove("active");
+            butCal2.classList.remove("active");
+            butCal3.classList.add("active");
+        }   
+    }
+
+}
+function selectClan(a){
+    var cal1 = document.querySelector("#calClan1");
+    var cal2 = document.querySelector("#calClan2");
+    var obj1 = document.querySelector("#objClan1");
+    var obj2 = document.querySelector("#objClan2");
+    var kra1 = document.querySelector("#kraClan1");
+    var kra2 = document.querySelector("#kraClan2");
+
+
+    var butClan1 = document.querySelector("#bClan1");
+    var butClan2 = document.querySelector("#bClan2");
+
+    if(a == 1){
+        cal1.style.display = "block";
+        cal2.style.display = "none";
+        obj1.style.display = "block";
+        obj2.style.display = "none";
+        kra1.style.display = "block";
+        kra2.style.display = "none";
+
+        butClan1.classList.add("active");
+        butClan2.classList.remove("active");
+    }else if(a == 2){
+        cal1.style.display = "none";
+        cal2.style.display = "block";
+        obj1.style.display = "none";
+        obj2.style.display = "block";
+        kra1.style.display = "none";
+        kra2.style.display = "block";
+
+        butClan1.classList.remove("active");
+        butClan2.classList.add("active");
+    }
 
 }

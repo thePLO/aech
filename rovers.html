@@ -37,136 +37,178 @@
 			<p>El seu LEMA és: <strong>SERVIM!!</strong></p>
 		</section>
 		<section class="calendari center">
-			<h2>Calendari</h2>
+			<ul>
+				<li class="ico2 rovers" id="bClan1" onclick="selectClan(1);">1</li>
+				<li> - CLAN - </li>
+				<li class="ico2 rovers" id="bClan2" onclick="selectClan(2);">2</li>
+			</ul>
+		</section>
+		<section class="calendari center" id="calClan1">
+			<h2>Calendari - 1</h2>
 				<ul>
 					<li class="ico2 rovers" id="b1" onclick="selectCal(1);">1</li>
-					<li class="ico2 rovers" id="b2" onclick="selectCal(2);">2</li>
-					<li class="ico2 rovers" id="b3" onclick="selectCal(3);">3</li>
+					<li class="ico2 rovers" id="b2" onclick="selectCal();">2</li>
+					<li class="ico2 rovers" id="b3" onclick="selectCal();">3</li>
 				</ul>
 			<div class="container-flex" id="cal1Trim">
 				<div class ="cal-mes"><h3>Octubre</h3>
-					<div class ="cal-dia">07-08<br>Activitat de matí</div>
-					<div class ="cal-dia">14-15<br>Activitat de matí</div>
-					<div class ="cal-dia">21-22<br>Activitat de matí</div>
-					<div class ="cal-dia">28-29<br>Activitat de matí</div>
+					<div class ="cal-dia"><strong>06</strong>-07<br>Activitat de matí</div>
+					<div class ="cal-dia"><strong>13-14</strong><br>Lliure</div>
+					<div class ="cal-dia"><strong>20</strong>-21<br>--</div>
+					<div class ="cal-dia"><strong>27</strong>-28<br>--</div>
 				</div>
 				<div class ="cal-mes"><h3>Novembre</h3>
-					<div class ="cal-dia">04-05<br><a href='media/pdf/ro_exc171104.pdf'><i class='fa fa-file-pdf-o'></i></a> Excursió dos dies</div>
-					<div class ="cal-dia">11-12<br>Activitat de matí</div>
-					<div class ="cal-dia">18-19<br>Activitat de matí</div>
-					<div class ="cal-dia">25-26<br>Activitat de matí</div>
+					<div class ="cal-dia"><strong>03-04</strong><br>Lliure</div>
+					<div class ="cal-dia"><strong>10</strong>-11<br>--</div>
+					<div class ="cal-dia"><strong>20-21</strong><br>--</div>
+					<div class ="cal-dia"><strong>27</strong>-28<br>--</div>
 				</div>
 				<div class ="cal-mes"><h3>Desembre</h3>
-					<div class ="cal-dia">02-03<br>Servei</div>
-					<div class ="cal-dia">09-10<br>Lliure</div>
-					<div class ="cal-dia">16-17<br><a href='media/pdf/pessebrada17.pdf'><i class='fa fa-file-pdf-o'></i></a> <a href='media/pdf/auto_pessebrada17.pdf'><i class='fa fa-pencil-square-o'></i></a> Pessebrada</div>
-					<div class ="cal-dia">27-30<br><a href='media/pdf/ro_exc171227.pdf'><i class='fa fa-file-pdf-o'></i></a> Ruta de Nadal</div>
+					<div class ="cal-dia"><strong>01</strong>-02<br>--</div>
+					<div class ="cal-dia"><strong>09-10</strong><br>Lliure</div>
+					<div class ="cal-dia"><strong>16</strong>-17<br>Pessebrada</div>
+					<div class ="cal-dia"><strong>27-30</strong><br>Ruta de Nadal</div>
 				</div>
-			</div>	
+			</div>
 			<div class="container-flex" id="cal2Trim">
 				<div class ="cal-mes"><h3>Gener</h3>
-					<div class ="cal-dia"><strong>13</strong>-14<br>Activitat de matí</div>
-					<div class ="cal-dia"><strong>20</strong>-21<br>Activitat de matí</div>
-					<div class ="cal-dia"><strong>27</strong>-28<br>??</div>
+					<div class ="cal-dia"><strong>00</strong>-00<br>--</div>
 				</div>
 				<div class ="cal-mes"><h3>Febrer</h3>
-					<div class ="cal-dia"><strong>03</strong>-04<br>??</div>
-					<div class ="cal-dia"><strong>10</strong>-11<br>Lliure</div>
-					<div class ="cal-dia"><strong>17</strong>-18<br>Lliure</div>
-					<div class ="cal-dia"><strong>24-25</strong><br><a href='media/pdf/ro_exc180224.pdf'><i class='fa fa-file-pdf-o'></i></a> TRES</div>
+					<div class ="cal-dia"><strong>00</strong>-00<br>--</div>
 				</div>
 				<div class ="cal-mes"><h3>Març</h3>
-					<div class ="cal-dia"><strong>03</strong>-04<br>??</div>
-					<div class ="cal-dia"><strong>10</strong>-11<br>??</div>
-					<div class ="cal-dia"><strong>17</strong>-18<br>??</div>
-					<div class ="cal-dia"><strong>29-01</strong><br>Pasqua</div>
+					<div class ="cal-dia"><strong>00</strong>-00<br>--</div>
 				</div>
 			</div>
 			<div class="container-flex" id="cal3Trim">
 				<div class ="cal-mes"><h3>Abril</h3>
-					<div class ="cal-dia"><strong>07</strong>-08<br>Activitat de matí</div>
-					<div class ="cal-dia"><strong>14-15</strong><br><a href='media/pdf/tg_exc180414.pdf'><i class='fa fa-file-pdf-o'></i></a> Trobada General</div>
-					<div class ="cal-dia"><strong>21</strong>-22<br>Activitat de matí</div>
-					<div class ="cal-dia"><strong>28-29</strong><br>Lliure</div>
+					<div class ="cal-dia"><strong>00</strong>-00<br>--</div>
 				</div>
 				<div class ="cal-mes"><h3>Maig</h3>
-					<div class ="cal-dia"><strong>05</strong>-06<br>Activitat de matí</div>
-					<div class ="cal-dia"><strong>12-13</strong><br><a href='media/pdf/ro_exc180512.pdf'><i class='fa fa-file-pdf-o'></i></a> Pelegrinatge</div>
-					<div class ="cal-dia"><strong>19-20</strong><br>Lliure</div>
-					<div class ="cal-dia"><strong>26</strong>-27<br>Activitat de matí</div>
+					<div class ="cal-dia"><strong>00</strong>-00<br>--</div>
 				</div>
 				<div class ="cal-mes"><h3>Juny</h3>
-					<div class ="cal-dia"><strong>02</strong>-03<br>Excursió 1 dia</div>
-					<div class ="cal-dia"><strong>09</strong>-10<br>Activitat de matí</div>
-					<div class ="cal-dia"><strong>16</strong>-17<br><a href='costellada.html'><i class='fa fa-info-circle'></i></a> Costellada '18</div>
+					<div class ="cal-dia"><strong>00</strong>-00<br>--</div>
 				</div>
 				<div class ="cal-mes"><h3>Juliol</h3>
-					<div class ="cal-dia"><strong>09</strong>-22<br>Ruta</div>
+					<div class ="cal-dia"><strong>00</strong>-00<br><a href='media/pdf/campaments18.pdf'><i class='fa fa-file-pdf-o'></i></a> Campaments</div>
 				</div>
 			</div>
-			<script type="text/javascript">selectCal(3);</script>
+			<script type="text/javascript">selectCal(1);</script>
 		</section>
-		<section>
-			<h2>Objectius del trimestre</h2>
-			<!--<div>
-				<div class ='obj-cat'>
-					<h3>Escoltisme</h3>
-						<ul><li>Realitzar un servei per la societat</li>
-						<li>Dur a terme les nostres responsabilitats dins del clan</li>
-						<li>Descobrir que vol dir ser róver</li></ul>
+		<section class="calendari center" id="calClan2">
+			<h2>Calendari - 2</h2>
+				<ul>
+					<li class="ico2 rovers" id="b1_2" onclick="selectCal(4);">1</li>
+					<li class="ico2 rovers" id="b2_2" onclick="selectCal();">2</li>
+					<li class="ico2 rovers" id="b3_2" onclick="selectCal();">3</li>
+				</ul>
+			<div class="container-flex" id="cal1Trim2">
+				<div class ="cal-mes"><h3>Octubre</h3>
+					<div class ="cal-dia"><strong>06</strong>-07<br>Activitat de matí</div>
+					<div class ="cal-dia"><strong>13-14</strong><br>Lliure</div>
+					<div class ="cal-dia"><strong>20</strong>-21<br>--</div>
+					<div class ="cal-dia"><strong>27</strong>-28<br>--</div>
 				</div>
-				<div class ='obj-cat'>
-					<h3>Natura</h3>
-						<ul><li>Conèixer l'entorn per on passem</li>
-						<li>Cuidar la nostra petjada ecològica</li></ul>
+				<div class ="cal-mes"><h3>Novembre</h3>
+					<div class ="cal-dia"><strong>03-04</strong><br>Lliure</div>
+					<div class ="cal-dia"><strong>10</strong>-11<br>--</div>
+					<div class ="cal-dia"><strong>20-21</strong><br>--</div>
+					<div class ="cal-dia"><strong>27</strong>-28<br>--</div>
 				</div>
-				<div class ='obj-cat'>
-					<h3>Fe</h3>
-						<ul><li>Ser visibles a la pessebrada</li>
-						<li>Apfofitar els moments de reflexió personal</li></ul>
+				<div class ="cal-mes"><h3>Desembre</h3>
+					<div class ="cal-dia"><strong>01</strong>-02<br>--</div>
+					<div class ="cal-dia"><strong>09-10</strong><br>Lliure</div>
+					<div class ="cal-dia"><strong>16</strong>-17<br>Pessebrada</div>
+					<div class ="cal-dia"><strong>27-30</strong><br>Ruta de Nadal</div>
 				</div>
-			</div>-->
-			<!--<div>
-				<div class ="obj-cat">
-					<h3>Escoltisme</h3>
-						<ul><li>??</li></ul>
+			</div>
+			<div class="container-flex" id="cal2Trim2">
+				<div class ="cal-mes"><h3>Gener</h3>
+					<div class ="cal-dia"><strong>00</strong>-00<br>--</div>
 				</div>
-				<div class ="obj-cat">
-					<h3>Natura</h3>
-						<ul><li>??</li></ul>
+				<div class ="cal-mes"><h3>Febrer</h3>
+					<div class ="cal-dia"><strong>00</strong>-00<br>--</div>
 				</div>
-				<div class ="obj-cat">
-					<h3>Fe</h3>
-						<ul><li>??</li></ul>
+				<div class ="cal-mes"><h3>Març</h3>
+					<div class ="cal-dia"><strong>00</strong>-00<br>--</div>
 				</div>
-			</div>-->
+			</div>
+			<div class="container-flex" id="cal3Trim2">
+				<div class ="cal-mes"><h3>Abril</h3>
+					<div class ="cal-dia"><strong>00</strong>-00<br>--</div>
+				</div>
+				<div class ="cal-mes"><h3>Maig</h3>
+					<div class ="cal-dia"><strong>00</strong>-00<br>--</div>
+				</div>
+				<div class ="cal-mes"><h3>Juny</h3>
+					<div class ="cal-dia"><strong>00</strong>-00<br>--</div>
+				</div>
+				<div class ="cal-mes"><h3>Juliol</h3>
+					<div class ="cal-dia"><strong>00</strong>-00<br><a href='media/pdf/campaments18.pdf'><i class='fa fa-file-pdf-o'></i></a> Campaments</div>
+				</div>
+			</div>
+			<script type="text/javascript">selectCal(4);</script>
+		</section>
+		<section id="objClan1">
+			<h2>Objectius del trimestre - 1</h2>
 			<div>
 				<div class ="obj-cat">
 					<h3>Escoltisme</h3>
-						<ul><li>Adaptar-nos a les necessitats de tot el clan.</li>
-							<li>Fer-nos la preparació del trimestre més nostre.</li></ul>
+						<ul><li>--</li>
+							<li>--</li></ul>
 				</div>
 				<div class ="obj-cat">
 					<h3>Natura</h3>
-						<ul><li>Conèixer una mica la cultura i manera de fer de la gent dels llocs on anem.</li>
-							<li>Vetllar per la bona gestió dels nostres residus durant la ruta.</li></ul>
+						<ul><li>--</li>
+							<li>--</li></ul>
 				</div>
 				<div class ="obj-cat">
 					<h3>Fe</h3>
-						<ul><li>Aprofitar els moments de desconnexió que ens ofereix el trimestre com a eina de creixement personal.</li></ul>
+						<ul><li>--</li>
+							<li>--</li></ul>
 				</div>
-			</div>				
+			</div>
 		</section>
-		<section class="monis center">
-			<h2>Kraal de monitors</h2>
+		<section id="objClan2">
+			<h2>Objectius del trimestre - 2</h2>
+			<div>
+				<div class ="obj-cat">
+					<h3>Escoltisme</h3>
+						<ul><li>--</li>
+							<li>--</li></ul>
+				</div>
+				<div class ="obj-cat">
+					<h3>Natura</h3>
+						<ul><li>--</li>
+							<li>--</li></ul>
+				</div>
+				<div class ="obj-cat">
+					<h3>Fe</h3>
+						<ul><li>--</li>
+							<li>--</li></ul>
+				</div>
+			</div>
+		</section>
+		<section class="monis center" id="kraClan1">
+			<h2>Kraal de monitors - 1</h2>
 			<div class="container-flex">
-				<div class="kraal-moni"><img src="media/gfx/monis/axel_cols.jpg"><br>
-					Axel Cols</div>
 				<div class="kraal-moni"><img src="media/gfx/monis/pol_demiguel.jpg"><br>
 					Pol de Miguel</div>
 			</div>
 			<a href='mailto:rovers@aech.cat'>rovers@aech.cat</a>
 		</section>
+		<section class="monis center" id="kraClan2">
+			<h2>Kraal de monitors - 2</h2>
+			<div class="container-flex">
+				<div class="kraal-moni"><img src="media/gfx/monis/mireia_manuel.jpeg"><br>
+					Mireia Manuel</div>
+			</div>
+			<a href='mailto:rovers@aech.cat'>rovers@aech.cat</a>
+		</section>
+
+		<script type="text/javascript">selectClan(1);</script>
 		<section class="media center">
 			<h2>Fotos</h2>
 			<div class="container-flex2" style="margin-top:10px;" id="fotos">
